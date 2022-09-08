@@ -10,6 +10,9 @@
   .section-divider svg {
     height: 150px;
   }
+  .copyright ul li:first-child {
+    margin-right: 3rem;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -45,6 +48,10 @@
     min-height: 15rem;
     align-items: center;
   }
+  .copyright {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -62,6 +69,12 @@
   .download-app-btns {
     column-gap: 2rem;
     justify-content: flex-start;
+  }
+  .footer-about .download-app-btns {
+    column-gap: 1rem;
+  }
+  .footer-logo {
+    margin: 0;
   }
 }
 
