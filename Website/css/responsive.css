@@ -68,6 +68,10 @@
   .section-divider svg {
     width: calc(150% + 2px);
   }
+  .carousel-indicators [data-bs-target] {
+    width: 1rem;
+    height: 1rem;
+  }
   .client-img img {
     width: 12rem;
   }
@@ -95,7 +99,7 @@
     height: 120px;
   }
   .testimonials-card {
-    background: linear-gradient(to right, rgb(184, 255, 249) 0% 84%, rgb(255, 255, 255) 84% 100%);
+    background: linear-gradient(to right, rgb(221 241 249) 0% 84%, rgb(255 255 255) 84% 100%);
   }
   .client-img {
     background: transparent;
@@ -141,7 +145,7 @@
     --bs-btn-font-size: 1.75rem;
   }
   .testimonials-card {
-    background: #B8FFF9;
+    background: #ddf1f9;
   }
   .testimonials-card .order-lg-last {
     align-self: flex-start;
