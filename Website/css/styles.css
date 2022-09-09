@@ -405,6 +405,25 @@ a {
     height: 100px;
 }
 
+/* Index Page Main Section Styling */
+.feature-icon {
+    margin: 0 auto 3rem;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(var(--bs-primary-rgb), 0.1);
+}
+.feature-icon svg {
+    width: 4rem;
+    height: 4rem;
+}
+.feature-icon.light-icon {
+    background-color: rgba(var(--bs-secondary-rgb), 0.15);
+}
+
 /* Index Page Video Section Styling */
 .video::before {
     inset: 0;
