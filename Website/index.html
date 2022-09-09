@@ -17,54 +17,454 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <!-- Required CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animation.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <!-- Header Navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary smooth_cubic_trans py-xl-3">
-        <div class="container-fluid container-lg">
-          <a class="navbar-brand smooth_cubic_trans p-0 m-0" href="index.html">
-            <img class="img-fluid smooth_cubic_trans" src="images/common/logo-icon.svg" alt="Gizsafe Logo Icon">
-          </a>
-          <button class="navbar-toggler smooth_cubic_trans collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="toggler_icons fast_trans">
-              <span class="icon-bar first-bar fast_trans"></span>
-              <span class="icon-bar second-bar fast_trans"></span>
-              <span class="icon-bar third-bar fast_trans"></span>
-            </span>
-            <span class="toggler-txt">Menu</span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav py-3 py-md-0 ms-md-auto">
-              <!-- <li class="nav-item">
-                <a class="nav-link px-3 px-md-0 fast_cubic_trans active" aria-current="page" href="#">Home</a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link px-3 px-md-0 fast_cubic_trans" href="#">How it works</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-3 px-md-0 fast_cubic_trans" href="#">Solution</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-3 px-md-0 fast_cubic_trans" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link px-3 px-md-0 fast_cubic_trans" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item nav-btn">
-                <!-- <a class="nav-link rounded-pill px-3 px-md-4 fast_cubic_trans" href="#">Download</a> -->
-                <a class="btn btn-light fast_cubic_trans" href="#">Download</a>
-              </li>
-            </ul>
+      <div class="container-fluid container-lg smooth_ease_trans">
+        <a class="navbar-brand smooth_cubic_trans p-0 m-0" href="index.html">
+          <img class="img-fluid smooth_cubic_trans" src="images/common/logo-icon.svg" alt="Gizsafe Logo Icon">
+        </a>
+        <button class="navbar-toggler smooth_cubic_trans collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler_icons smooth_cubic_trans">
+            <span class="icon-bar first-bar smooth_cubic_trans"></span>
+            <span class="icon-bar second-bar smooth_cubic_trans"></span>
+            <span class="icon-bar third-bar smooth_cubic_trans"></span>
+          </span>
+          <span class="toggler-txt">Menu</span>
+        </button>
+        <div class="collapse navbar-collapse smooth_ease_trans" id="navbarSupportedContent">
+          <ul class="navbar-nav smooth_ease_trans py-4 py-md-0 ms-md-auto">
+            <!-- <li class="nav-item">
+              <a class="nav-link px-3 px-md-0 fast_cubic_trans active" aria-current="page" href="#">Home</a>
+            </li> -->
+            <li class="nav-item smooth_ease_trans">
+              <a class="nav-link px-3 px-md-0 fast_cubic_trans" href="#">How it works</a>
+            </li>
+            <li class="nav-item smooth_ease_trans">
+              <a class="nav-link px-3 px-md-0 fast_cubic_trans" href="#">Solution</a>
+            </li>
+            <li class="nav-item smooth_ease_trans">
+              <a class="nav-link px-3 px-md-0 fast_cubic_trans" href="#">Pricing</a>
+            </li>
+            <li class="nav-item smooth_ease_trans">
+              <a class="nav-link px-3 px-md-0 fast_cubic_trans" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item smooth_ease_trans nav-btn">
+              <a class="btn btn-light rounded-pill fast_cubic_trans" href="#">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="banner py-5 bg-primary">
+      <div class="container smooth_ease_trans">
+        <div class="row gy-5 gy-lg-0 justify-content-center align-items-center smooth_ease_trans">
+          <div class="col-lg-6 smooth_ease_trans">
+            <div class="banner-cont smooth_ease_trans text-center text-lg-start text-white">
+              <h1 class="title fw-bold smooth_ease_trans text-capitalize lh-1 pb-4">The all-in-one home app</h1>
+              <p class="detail smooth_ease_trans lh-lg">Contrary to popular belief, Lorem Ipsum is not simply randa text. has roots in a piece of classical Latin literature from BC, making it over 2000 years old. Richard McClintock.</p>
+              <div class="btn-group banner-btns py-5">
+                <a href="#" class="btn btn-light smooth_cubic_trans rounded-pill">Get Started</a>
+                <a href="#" class="btn btn-primary smooth_cubic_trans rounded-pill"><i class="fa-solid fa-play"></i> Watch Video</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 col-lg-6 smooth_ease_trans">
+            <div class="banner-image text-center">
+              <img class="img-fluid smooth_cubic_trans" src="images/index/index-hero-3d-image-resized.png" alt="Gizsafe 3D representation">
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
+      <div class="section-divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path fill="#ffffff" fill-opacity="1" d="M0,224L48,197.3C96,171,192,117,288,90.7C384,64,480,64,576,101.3C672,139,768,213,864,224C960,235,1056,181,1152,170.7C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+    </section>
+    <!-- Watch Video Section -->
+    <section class="video bg-image py-5">
+      <div class="container smooth_ease_trans py-5">
+        <div class="row smooth_ease_trans">
+          <div class="col-lg-6 smooth_ease_trans">
+            <h2 class="main-title fw-bold text-white text-capitalize text-center text-lg-start smooth_ease_trans">Save time, money and headaches</h2>
+          </div>
+          <div class="col-12 smooth_ease_trans">
+            <div class="icon-block smooth_ease_trans">
+              <a href="https://www.youtube.com/" class="btn play-icon rounded-circle smooth_cubic_trans"><i class="fa-solid fa-play smooth_cubic_trans"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Download App Section -->
+    <section class="download-app py-5 bg-primary">
+      <div class="container py-md-5 py-lg-4 smooth_ease_trans">
+        <div class="row align-items-center smooth_ease_trans">
+          <div class="col-lg-6 order-last order-lg-first smooth_ease_trans">
+            <div class="download-app-image text-center">
+              <img class="img-fluid smooth_cubic_trans" src="images/common/download-app-3d-image-resized.png" alt="Gizsafe 3D representation">
+            </div>
+          </div>
+          <div class="col-lg-6 order-first order-lg-last smooth_ease_trans">
+            <div class="download-app-cont smooth_ease_trans text-center text-lg-start text-white">
+              <h2 class="main-title fw-bold smooth_ease_trans pb-4">Downlaod our app from the store</h2>
+              <p class="detail smooth_ease_trans lh-lg">In consequant, quam id sodales hendrerit, eros mi molestie leo an lacinia risus neque tristique augue. Proin tempus urna vel congue elementum. Vestibulum euismod accumsan.</p>
+              <div class="btn-group download-app-btns py-5">
+                <a href="#" class="download-app-btn smooth_cubic_trans">
+                  <img class="img-fluid smooth_cubic_trans" src="images/common/app-store.svg" alt="Download on the App Store">
+                </a>
+                <a href="#" class="download-app-btn smooth_cubic_trans">
+                  <img class="img-fluid smooth_cubic_trans" src="images/common/google-play.svg" alt="Available on the Google Play">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-divider reverse">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path fill="#ffffff" fill-opacity="1" d="M0,224L48,197.3C96,171,192,117,288,90.7C384,64,480,64,576,101.3C672,139,768,213,864,224C960,235,1056,181,1152,170.7C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+    </section>
+    <!-- Testimonial and FAQ Section -->
+    <section class="index-tab py-5">
+      <div class="container py-5 smooth_ease_trans">
+        <div class="nav nav-tabs smooth_ease_trans pb-5" id="nav-tab" role="tablist">
+          <button class="nav-link smooth_cubic_trans active" id="nav-testimonials-tab" data-bs-toggle="tab" data-bs-target="#nav-testimonials" type="button" role="tab" aria-controls="nav-testimonials" aria-selected="true">Testimonials</button>
+          <button class="nav-link smooth_cubic_trans" id="nav-faqs-tab" data-bs-toggle="tab" data-bs-target="#nav-faqs" type="button" role="tab" aria-controls="nav-faqs" aria-selected="false">FAQs</button>
+        </div>
+        <div class="tab-content smooth_ease_trans" id="nav-tabContent">
+          <div class="tab-pane testimonial-tab fade smooth_cubic_trans show active pt-lg-5" id="nav-testimonials" role="tabpanel" aria-labelledby="nav-testimonials-tab" tabindex="0">
+            <h2 class="main-title fw-bold mb-4 mb-lg-5">What our customer say?</h2>
+            <div id="testimonial-carousel" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-inner mb-4">
+                <div class="carousel-item slow_ease_trans active">
+                  <div class="testimonials-card smooth_ease_trans">
+                    <div class="row align-items-center justify-content-center smooth_ease_trans">
+                      <div class="col-lg-8 order-last order-lg-first smooth_ease_trans">
+                        <div class="testimonials-content p-3 p-sm-4 p-lg-5 smooth_ease_trans">
+                          <div class="pre-quote">
+                            <svg class="quote-icon smooth_cubic_trans" width="48" height="48" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="#00cec9" fill-rule="evenodd" clip-rule="evenodd" d="M6.66669 42.6667H0V234.667V419.333C0 446.948 22.3858 469.333 50 469.333H184.667C212.281 469.333 234.667 446.948 234.667 419.333V284.667C234.667 257.053 212.281 234.667 184.667 234.667H106.667V142.667C106.667 87.4383 61.8952 42.6667 6.66669 42.6667Z"/>
+                              <path fill="#00cec9" fill-rule="evenodd" clip-rule="evenodd" d="M284 42.6667H277.333V234.667V419.333C277.333 446.948 299.719 469.333 327.334 469.333H462C489.614 469.333 512 446.948 512 419.333V284.667C512 257.053 489.614 234.667 462 234.667H384V142.667C384 87.4383 339.229 42.6667 284 42.6667Z"/>
+                            </svg>
+                          </div>
+                          <p class="testimonials-txt my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rerum, dignissimos id deserunt adipisci nobis facere nulla amet labore facilis provident voluptatum numquam, et nam ullam voluptate animi aliquid cupiditate, beatae sequi. Hic omnis maxime velit minus necessitatibus? Tempora ab fuga neque, cupiditate velit vero reprehenderit numquam assumenda reiciendis officia!</p>
+                          <div class="post-quote text-end">
+                            <svg class="quote-icon smooth_cubic_trans" width="48" height="48" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="#00cec9" fill-rule="evenodd" clip-rule="evenodd" d="M505.333 469.333H512V277.333V92.6668C512 65.0526 489.614 42.6668 462 42.6668H327.333C299.719 42.6668 277.333 65.0526 277.333 92.6668V227.333C277.333 254.948 299.719 277.333 327.333 277.333H405.333V369.333C405.333 424.562 450.105 469.333 505.333 469.333Z"/>
+                              <path fill="#00cec9" fill-rule="evenodd" clip-rule="evenodd" d="M228 469.333H234.667V277.333V92.6668C234.667 65.0526 212.281 42.6668 184.666 42.6668H49.9998C22.3856 42.6668 -0.000167847 65.0526 -0.000167847 92.6668V227.333C-0.000167847 254.948 22.3856 277.333 49.9999 277.333H128V369.333C128 424.562 172.771 469.333 228 469.333Z"/>
+                            </svg>
+                          </div>
+                          <div class="client-detail">
+                            <h4 class="name fw-semibold m-0">Roy Wallance</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 order-first order-lg-last smooth_ease_trans">
+                        <div class="client-img">
+                          <img class="img-fluid smooth_ease_trans" src="images/index/roy-wallance.jpg" alt="Roy Wallance">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item slow_ease_trans">
+                  <div class="testimonials-card smooth_ease_trans">
+                    <div class="row align-items-center justify-content-center smooth_ease_trans">
+                      <div class="col-lg-8 order-last order-lg-first smooth_ease_trans">
+                        <div class="testimonials-content p-3 p-sm-4 p-lg-5 smooth_ease_trans">
+                          <div class="pre-quote">
+                            <svg class="quote-icon smooth_cubic_trans" width="48" height="48" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="#00cec9" fill-rule="evenodd" clip-rule="evenodd" d="M6.66669 42.6667H0V234.667V419.333C0 446.948 22.3858 469.333 50 469.333H184.667C212.281 469.333 234.667 446.948 234.667 419.333V284.667C234.667 257.053 212.281 234.667 184.667 234.667H106.667V142.667C106.667 87.4383 61.8952 42.6667 6.66669 42.6667Z"/>
+                              <path fill="#00cec9" fill-rule="evenodd" clip-rule="evenodd" d="M284 42.6667H277.333V234.667V419.333C277.333 446.948 299.719 469.333 327.334 469.333H462C489.614 469.333 512 446.948 512 419.333V284.667C512 257.053 489.614 234.667 462 234.667H384V142.667C384 87.4383 339.229 42.6667 284 42.6667Z"/>
+                            </svg>
+                          </div>
+                          <p class="testimonials-txt my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rerum, dignissimos id deserunt adipisci nobis facere nulla amet labore facilis provident voluptatum numquam, et nam ullam voluptate animi aliquid cupiditate, beatae sequi. Hic omnis maxime velit minus necessitatibus? Tempora ab fuga neque, cupiditate velit vero reprehenderit numquam assumenda reiciendis officia!</p>
+                          <div class="post-quote text-end">
+                            <svg class="quote-icon smooth_cubic_trans" width="48" height="48" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="#00cec9" fill-rule="evenodd" clip-rule="evenodd" d="M505.333 469.333H512V277.333V92.6668C512 65.0526 489.614 42.6668 462 42.6668H327.333C299.719 42.6668 277.333 65.0526 277.333 92.6668V227.333C277.333 254.948 299.719 277.333 327.333 277.333H405.333V369.333C405.333 424.562 450.105 469.333 505.333 469.333Z"/>
+                              <path fill="#00cec9" fill-rule="evenodd" clip-rule="evenodd" d="M228 469.333H234.667V277.333V92.6668C234.667 65.0526 212.281 42.6668 184.666 42.6668H49.9998C22.3856 42.6668 -0.000167847 65.0526 -0.000167847 92.6668V227.333C-0.000167847 254.948 22.3856 277.333 49.9999 277.333H128V369.333C128 424.562 172.771 469.333 228 469.333Z"/>
+                            </svg>
+                          </div>
+                          <div class="client-detail">
+                            <h4 class="name fw-semibold m-0">Roy Wallance</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 order-first order-lg-last smooth_ease_trans">
+                        <div class="client-img">
+                          <img class="img-fluid smooth_ease_trans" src="images/index/roy-wallance.jpg" alt="Roy Wallance">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item slow_ease_trans">
+                  <div class="testimonials-card smooth_ease_trans">
+                    <div class="row align-items-center justify-content-center smooth_ease_trans">
+                      <div class="col-lg-8 order-last order-lg-first smooth_ease_trans">
+                        <div class="testimonials-content p-3 p-sm-4 p-lg-5 smooth_ease_trans">
+                          <div class="pre-quote">
+                            <svg class="quote-icon smooth_cubic_trans" width="48" height="48" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="#00cec9" fill-rule="evenodd" clip-rule="evenodd" d="M6.66669 42.6667H0V234.667V419.333C0 446.948 22.3858 469.333 50 469.333H184.667C212.281 469.333 234.667 446.948 234.667 419.333V284.667C234.667 257.053 212.281 234.667 184.667 234.667H106.667V142.667C106.667 87.4383 61.8952 42.6667 6.66669 42.6667Z"/>
+                              <path fill="#00cec9" fill-rule="evenodd" clip-rule="evenodd" d="M284 42.6667H277.333V234.667V419.333C277.333 446.948 299.719 469.333 327.334 469.333H462C489.614 469.333 512 446.948 512 419.333V284.667C512 257.053 489.614 234.667 462 234.667H384V142.667C384 87.4383 339.229 42.6667 284 42.6667Z"/>
+                            </svg>
+                          </div>
+                          <p class="testimonials-txt my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rerum, dignissimos id deserunt adipisci nobis facere nulla amet labore facilis provident voluptatum numquam, et nam ullam voluptate animi aliquid cupiditate, beatae sequi. Hic omnis maxime velit minus necessitatibus? Tempora ab fuga neque, cupiditate velit vero reprehenderit numquam assumenda reiciendis officia!</p>
+                          <div class="post-quote text-end">
+                            <svg class="quote-icon smooth_cubic_trans" width="48" height="48" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="#00cec9" fill-rule="evenodd" clip-rule="evenodd" d="M505.333 469.333H512V277.333V92.6668C512 65.0526 489.614 42.6668 462 42.6668H327.333C299.719 42.6668 277.333 65.0526 277.333 92.6668V227.333C277.333 254.948 299.719 277.333 327.333 277.333H405.333V369.333C405.333 424.562 450.105 469.333 505.333 469.333Z"/>
+                              <path fill="#00cec9" fill-rule="evenodd" clip-rule="evenodd" d="M228 469.333H234.667V277.333V92.6668C234.667 65.0526 212.281 42.6668 184.666 42.6668H49.9998C22.3856 42.6668 -0.000167847 65.0526 -0.000167847 92.6668V227.333C-0.000167847 254.948 22.3856 277.333 49.9999 277.333H128V369.333C128 424.562 172.771 469.333 228 469.333Z"/>
+                            </svg>
+                          </div>
+                          <div class="client-detail">
+                            <h4 class="name fw-semibold m-0">Roy Wallance</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 order-first order-lg-last smooth_ease_trans">
+                        <div class="client-img">
+                          <img class="img-fluid smooth_ease_trans" src="images/index/roy-wallance.jpg" alt="Roy Wallance">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-indic-cntrl">
+                <div class="carousel-control smooth_cubic_trans">
+                  <button class="carousel-control-prev smooth_cubic_trans" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next smooth_cubic_trans" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <div class="carousel-indicators smooth_cubic_trans">
+                  <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#testimonial-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane faqs-tab fade smooth_cubic_trans" id="nav-faqs" role="tabpanel" aria-labelledby="nav-faqs-tab" tabindex="0">
+            <div class="row align-items-center justify-content-center smooth_ease_trans">
+              <div class="col-xl-6 smooth_ease_trans">
+                <div class="accordion" id="faqsaccordion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How can I install the app?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqsaccordion">
+                      <div class="accordion-body lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quasi, voluptatibus minus vero soluta vitae magnam ipsam enim cum id.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        What is the main features of this app?
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqsaccordion">
+                      <div class="accordion-body lh-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio omnis eos dolorum sed quisquam voluptatem harum repellendus fugit architecto, quidem nemo doloremque sint beatae obcaecati vel, voluptatibus aut officia doloribus!</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Is there any video sessions?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqsaccordion">
+                      <div class="accordion-body lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil reiciendis vero asperiores, numquam voluptate, molestiae debitis nisi eius vitae dolore delectus dignissimos, earum voluptatem.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        What is the main features of this app?
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqsaccordion">
+                      <div class="accordion-body lh-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio omnis eos dolorum sed quisquam voluptatem harum repellendus fugit architecto, quidem nemo doloremque sint beatae obcaecati vel, voluptatibus aut officia doloribus!</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Is there any video sessions?
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqsaccordion">
+                      <div class="accordion-body lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil reiciendis vero asperiores, numquam voluptate, molestiae debitis nisi eius vitae dolore delectus dignissimos, earum voluptatem.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        What is the main features of this app?
+                      </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqsaccordion">
+                      <div class="accordion-body lh-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio omnis eos dolorum sed quisquam voluptatem harum repellendus fugit architecto, quidem nemo doloremque sint beatae obcaecati vel, voluptatibus aut officia doloribus!</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Is there any video sessions?
+                      </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqsaccordion">
+                      <div class="accordion-body lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil reiciendis vero asperiores, numquam voluptate, molestiae debitis nisi eius vitae dolore delectus dignissimos, earum voluptatem.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEight">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        What is the main features of this app?
+                      </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqsaccordion">
+                      <div class="accordion-body lh-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio omnis eos dolorum sed quisquam voluptatem harum repellendus fugit architecto, quidem nemo doloremque sint beatae obcaecati vel, voluptatibus aut officia doloribus!</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingNine">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        Is there any video sessions?
+                      </button>
+                    </h2>
+                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqsaccordion">
+                      <div class="accordion-body lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nihil reiciendis vero asperiores, numquam voluptate, molestiae debitis nisi eius vitae dolore delectus dignissimos, earum voluptatem.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 d-none d-xl-block smooth_ease_trans">
+                <div class="faqs-illustration smooth_ease_trans">
+                  <img class="img-fluid smooth_ease_trans" src="images/index/index-hero-3d-image.png" alt="FAQs 3D Illustration">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Counter Section -->
+    <section class="counter-part py-lg-5">
+      <div class="container py-lg-5">
+        <div class="counter-board py-5 bg-primary text-white text-center rounded-4">
+          <div class="count-detail py-lg-4">
+            <h3 class="count-main mb-3 mb-md-4 fw-bold"><span class="counter">12</span> M+</h3>
+            <p class="count-name mb-0">Downloads</p>
+          </div>
+          <div class="count-detail py-lg-4">
+            <h3 class="count-main mb-3 mb-md-4 fw-bold"><span class="counter">18</span> M+</h3>
+            <p class="count-name mb-0">Active Users</p>
+          </div>
+          <div class="count-detail py-lg-4">
+            <h3 class="count-main mb-3 mb-md-4 fw-bold"><span class="counter">4.9</span></h3>
+            <p class="count-name mb-0">Ratings</p>
+          </div>
+          <div class="count-detail py-lg-4">
+            <h3 class="count-main mb-3 mb-md-4 fw-bold"><span class="counter">300</span> M+</h3>
+            <p class="count-name mb-0">Happy Clients</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Click to Contact Section -->
+    <section class="click-connect py-5">
+      <div class="container py-5">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-10 col-lg-8 col-xl-6">
+            <h2 class="main-title fw-bold text-dark mb-4">Still Not Lucky?</h2>
+            <p class="connect_txt lh-lg mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+            <a class="btn btn-primary rounded-pill" href="#">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container smooth_ease_trans">
+        <div class="row justify-content-between smooth_ease_trans">
+          <div class="col-lg-4 col-xxl-3 smooth_ease_trans">
+            <div class="footer-about text-center text-lg-start">
+              <a class="footer-logo smooth_cubic_trans" href="index.html">
+                <img class="img-fluid smooth_cubic_trans" src="images/common/footer-logo.svg" alt="Gizsafe Logo">
+              </a>
+              <p class="content smooth_ease_trans lh-lg mb-0 py-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+              <div class="btn-group download-app-btns">
+                <a href="#" class="download-app-btn smooth_cubic_trans">
+                  <img class="img-fluid smooth_cubic_trans" src="images/common/app-store.svg" alt="Download on the App Store">
+                </a>
+                <a href="#" class="download-app-btn smooth_cubic_trans">
+                  <img class="img-fluid smooth_cubic_trans" src="images/common/google-play.svg" alt="Available on the Google Play">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 smooth_ease_trans">
+            <div class="site-links pt-5 pt-lg-3">
+              <h4 class="link-head">Knowledge Base</h4>
+              <ul class="list-unstyled mb-0">
+                <li><a class="link-items smooth_cubic_trans" href="#">Home Maintenance</a></li>
+                <li><a class="link-items smooth_cubic_trans" href="#">Featured Article</a></li>
+              </ul>
+            </div>
+            <div class="site-links pt-5">
+              <h4 class="link-head">Contact Us</h4>
+              <ul class="list-unstyled mb-0">
+                <li><a class="link-items smooth_cubic_trans" href="mailto:gizsafe@gmail.com">gizsafe@gmail.com</a></li>
+                <li><a class="link-items smooth_cubic_trans" href="tel: +91 8973728787">+91 - 8973728787</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 smooth_ease_trans">
+            <div class="site-links pt-5 pt-lg-3">
+              <h4 class="link-head">Knowledge Base</h4>
+              <ul class="list-unstyled mb-0">
+                <li><a class="link-items smooth_cubic_trans" href="#">Home Maintenance</a></li>
+                <li><a class="link-items smooth_cubic_trans" href="#">Featured Article</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright pt-5">
+          <p class="content mb-0">Copyright @ 2020 Gizsafe</p>
+          <div class="external-links">
+            <a class="contact-link smooth_cubic_trans" href="mailto:contact@gizsafe.com">contact@gizsafe.com</a>
+            <a class="social-link smooth_cubic_trans" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="social-link smooth_cubic_trans" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a class="social-link smooth_cubic_trans" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- JavaScript Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/counterup.min.js"></script>
     <script src="js/custom.js"></script>
   </body>
 </html>
