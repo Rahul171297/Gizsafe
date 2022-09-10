@@ -58,6 +58,9 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+.fw-exbold {
+    font-weight: var(--fw-exbold);
+}
 section, div {
     position: relative;
 }
@@ -66,6 +69,10 @@ a {
 }
 .light-bg {
     background-color: var(--light-bg);
+}
+.sec-spacer {
+    display: block;
+    min-height: 2rem;
 }
 
 /* Section Main Title Styling */
@@ -161,7 +168,8 @@ a {
     --bs-btn-border-width: 0;
     --bs-btn-border-radius: 0.625rem;
     --bs-btn-focus-box-shadow: 0 0.5rem 1rem 0 rgba(var(--bs-btn-focus-shadow-rgb), 0.325);
-    height: 3rem;
+    height: 3.5rem;
+    width: min(100%, 15rem);
     display: flex;
     overflow: hidden;
     column-gap: 0.5rem;
@@ -227,7 +235,7 @@ a {
 
 .play-icon {
     height: 5rem;
-    aspect-ratio: 1;
+    width: 5rem;
     overflow: visible;
     position: relative;
     --bs-btn-border-width: 4px;
@@ -302,7 +310,6 @@ a {
 /* Navigation Download Button Styling */
 .nav-btn .btn {
     margin: auto;
-    width: min(100%, 15rem);
 }
 
 /* Hamburger Menu Styling */
@@ -379,12 +386,13 @@ a {
 }
 .banner-btns, .download-app-btns {
     width: 100%;
-    row-gap: 1rem;
+    gap: 1rem;
     border-radius: 0;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 .download-app-btns {
     align-items: center;
+    justify-content: center;
 }
 .section-divider {
     position: absolute;
@@ -407,9 +415,9 @@ a {
 
 /* Index Page Main Section Styling */
 .feature-icon {
-    margin: 0 auto 3rem;
-    width: 10rem;
-    height: 10rem;
+    margin: auto;
+    width: 8rem;
+    height: 8rem;
     display: flex;
     border-radius: 50%;
     align-items: center;
@@ -417,8 +425,8 @@ a {
     background-color: rgba(var(--bs-primary-rgb), 0.1);
 }
 .feature-icon svg {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
 }
 .feature-icon.light-icon {
     background-color: rgba(var(--bs-secondary-rgb), 0.15);
