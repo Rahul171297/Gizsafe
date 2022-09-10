@@ -414,6 +414,33 @@ a {
 }
 
 /* Index Page Main Section Styling */
+.particle-section {
+    overflow: hidden;
+    position: relative;
+}
+.main-image .anim-shape {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    transform: rotate(-25deg);
+}
+.main-image .img-fluid {
+    z-index: 2;
+    position: relative;
+}
+.anim-shape.top-right {
+    inset: 0 0 auto auto;
+}
+.anim-shape.top-left {
+    inset: 0 auto auto 0;
+}
+.anim-shape.bottom-right {
+    inset: auto 0 0 auto;
+}
+.anim-shape.bottom-left {
+    inset: auto auto -15% -10%;
+    transform: rotate(225deg);
+}
 .feature-icon {
     margin: auto;
     width: 8rem;
