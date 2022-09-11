@@ -114,6 +114,35 @@ a {
     background-color: var(--bs-primary);
 }
 
+/* Universal Form Styling */
+.form-floating>label {
+    color: #ced4da;
+}
+.form-control {
+    color: var(--bs-primary);
+    font-weight: var(--fw-medium);
+}
+.form-control:focus {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    box-shadow: none;
+}
+.form-floating>.form-select~label,
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control-plaintext~label,
+.form-floating>.form-control:not(:placeholder-shown)~label {
+    color: var(--bs-primary);
+}
+/* Removing Spinner from the Number Input field */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 /* Transition Effects */
 .slow_ease_trans {
     -webkit-transition: var(--slow-ease-transition);
@@ -706,7 +735,7 @@ a {
 }
 
 /* -------------------------------------------------- Inner Page Styling -------------------------------------------------- */
-/* How it works page */
+/* Common Inner Pages Stylings */
 .inner-banner {
     display: flex;
     align-items: flex-end;
@@ -721,10 +750,25 @@ a {
     position: absolute;
     background: linear-gradient(rgba(var(--bs-dark-rgb), 0.1), rgba(var(--bs-dark-rgb), 0.65));
 }
+
+/* How it works page */
 .how-banner {
     background: url("../images/how-it-works/banner-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+/* Contact Us page */
+.contact-banner {
+    background: url("../images/contact-us/banner-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.contact-form textarea.form-control {
+    resize: none;
+    height: 10rem;
 }
