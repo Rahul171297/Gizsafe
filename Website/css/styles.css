@@ -419,23 +419,23 @@ a {
     position: relative;
 }
 .main-image .anim-shape {
-    z-index: 1;
+    z-index: 0;
     display: none;
     position: absolute;
     transform: rotate(-25deg);
 }
-.main-image .img-fluid {
+.section-details, .main-image .img-fluid {
     z-index: 2;
     position: relative;
 }
 .anim-shape.top-right {
-    inset: 0 0 auto auto;
+    inset: -10% 0 auto auto;
 }
 .anim-shape.top-left {
-    inset: 0 auto auto 0;
+    inset: -10% auto auto 0;
 }
 .anim-shape.bottom-right {
-    inset: auto 0 0 auto;
+    inset: auto 0 -10% auto;
 }
 .anim-shape.bottom-left {
     inset: auto auto -15% -10%;
@@ -703,4 +703,28 @@ a {
 }
 .external-links .social-link:hover, .external-links .social-link:focus {
     border-color: var(--bs-white);
+}
+
+/* -------------------------------------------------- Inner Page Styling -------------------------------------------------- */
+/* How it works page */
+.inner-banner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    min-height: calc(100vh - 70px);
+}
+.inner-banner::before {
+    inset: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(rgba(var(--bs-dark-rgb), 0.1), rgba(var(--bs-dark-rgb), 0.65));
+}
+.how-banner {
+    background: url("../images/how-it-works/banner-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }

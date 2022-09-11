@@ -52,6 +52,9 @@
   .navbar-brand {
     width: 4rem;
   }
+  .inner-banner {
+    min-height: calc(100vh - 88px);
+  }
   .navbar-nav {
     column-gap: 1.5rem;
   }
