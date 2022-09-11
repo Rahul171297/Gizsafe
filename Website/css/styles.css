@@ -58,6 +58,12 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+.fw-medium {
+    font-weight: var(--fw-medium);
+}
+.fw-semibold {
+    font-weight: var(--fw-semibold);
+}
 .fw-exbold {
     font-weight: var(--fw-exbold);
 }
@@ -771,4 +777,97 @@ input[type=number] {
 .contact-form textarea.form-control {
     resize: none;
     height: 10rem;
+}
+
+/* Pricing page */
+.pricing-banner {
+    background: url("../images/pricing/banner-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.pricing-card {
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(var(--bs-dark-rgb), 0.25);
+}
+.pricing-cycle {
+    position: relative;
+    color: rgba(var(--bs-dark-rgb), 0.25);
+}
+.pricing-cycle::before {
+    content: "";
+    height: 2px;
+    width: 4rem;
+    margin: 0 auto;
+    position: absolute;
+    inset: auto 0 -0.25rem;
+    background-color: #6561C5;
+}
+.pricing-cycle.half-yearly::before {
+    background-color: #26BAB4;
+}
+.pricing-cycle.yearly::before {
+    background-color: #8B7DAB;
+}
+.pricing-card .detail-list {
+    padding-left: 1.5rem;
+}
+.pricing-card .detail-list li {
+    position: relative;
+}
+.pricing-card .detail-list li::before {
+    content: "\f00c";
+    color: #5BDF5D;
+    position: absolute;
+    text-rendering: auto;
+    display: inline-block;
+    font: var(--fa-font-solid);
+    inset: 5px auto auto -1.5rem;
+    -webkit-font-smoothing: antialiased;
+}
+.pricing-card .btn {
+    z-index: 1;
+    position: relative;
+}
+.waves {
+    z-index: 0;
+    width: 250%;
+    height: 7.5rem;
+    inset: auto 0 0;
+    position: absolute;
+}
+
+  /* Animation */
+.wave-paths use {
+    animation: move-waves 10s var(--ease-transition) infinite alternate-reverse both running;
+}
+.wave-paths use:nth-child(odd) {
+    animation-direction: reverse;
+    animation-duration: 15s;
+}
+.wave-paths use:nth-child(1) {
+    animation-delay: -2s;
+}
+.wave-paths use:nth-child(2) {
+    animation-delay: -3s;
+}
+.wave-paths use:nth-child(3) {
+    animation-delay: -4s;
+}
+.wave-paths use:nth-child(4) {
+    animation-delay: -5s;
+}
+
+@keyframes move-waves {
+    0% {
+        transform: translate3d(-25%, 0, 0);
+    }
+    50% {
+        transform: translate3d(-5%, 0, 0);
+    }
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
 }

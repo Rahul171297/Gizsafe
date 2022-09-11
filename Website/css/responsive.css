@@ -155,6 +155,9 @@
   .footer-logo {
     margin: 0;
   }
+  .pricing-content .translated-column {
+    transform: translateY(-25%);
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
