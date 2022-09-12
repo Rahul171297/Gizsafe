@@ -15,6 +15,8 @@
     --fw-bold: 700;
     --fw-exbold: 800;
     --fw-black: 900;
+    --bs-danger: #ff4757;
+    --bs-danger-rgb: 255, 71, 87;
     --bs-primary: #264BB4;
     --bs-primary-rgb: 38, 75, 180;
     --bs-secondary: #70c5eb;
@@ -261,9 +263,12 @@ input[type=number] {
     -o-transition: var(--fast-cubic-transition);
     transition: var(--fast-cubic-transition);
 }
-.btn-dark:hover::before, .btn-dark:focus::before, .btn-dark:active::before,
-.btn-light:hover::before, .btn-light:focus::before, .btn-light:active::before,
-.btn-primary:hover::before, .btn-primary:focus::before, .btn-primary:active::before {
+.btn-hover-primary::before {
+    background-color: var(--bs-primary);
+}
+.btn-dark:hover::before, .btn-dark:focus::before, .btn-dark.active::before,
+.btn-light:hover::before, .btn-light:focus::before, .btn-light.active::before,
+.btn-primary:hover::before, .btn-primary:focus::before, .btn-primary.active::before {
     -webkit-transform: scale(1);
     transform: scale(1);
 }
@@ -416,8 +421,12 @@ input[type=number] {
 }
 
 /* Index Page Banner Section Styling */
+.banner-cont {
+    z-index: 2;
+    position: relative;
+}
 .banner-cont .title {
-    font-size: clamp(1.75rem, calc(1.5rem + 2.5vw), 5rem);
+    font-size: clamp(1.75rem, calc(1.5rem + 1.5vw), 4rem);
 }
 .banner-btns, .download-app-btns {
     width: 100%;
@@ -838,8 +847,6 @@ input[type=number] {
     inset: auto 0 0;
     position: absolute;
 }
-
-  /* Animation */
 .wave-paths use {
     animation: move-waves 10s var(--ease-transition) infinite alternate-reverse both running;
 }
@@ -860,14 +867,16 @@ input[type=number] {
     animation-delay: -5s;
 }
 
-@keyframes move-waves {
-    0% {
-        transform: translate3d(-25%, 0, 0);
-    }
-    50% {
-        transform: translate3d(-5%, 0, 0);
-    }
-    100% {
-        transform: translate3d(-50%, 0, 0);
-    }
+/* Pricing Form page */
+.plan-conf-card {
+    display: flex;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(var(--bs-dark-rgb), 0.25);
+}
+.plan-conf-card .plan-details h3 span {
+    font-size: 80%;
+    color: var(--bs-gray-400);
+    font-weight: var(--fw-semibold);
 }
