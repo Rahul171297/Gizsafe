@@ -868,15 +868,23 @@ input[type=number] {
 }
 
 /* Pricing Form page */
-.plan-conf-card {
+.plan-summary-card {
     display: flex;
     row-gap: 2rem;
     flex-wrap: wrap;
     justify-content: space-between;
     box-shadow: 0 0.25rem 0.5rem 0 rgba(var(--bs-dark-rgb), 0.25);
 }
-.plan-conf-card .plan-details h3 span {
+.plan-summary-card .amount-details h3 span {
     font-size: 80%;
     color: var(--bs-gray-400);
     font-weight: var(--fw-semibold);
+}
+.payment-options {
+    display: flex;
+    flex-wrap: wrap;
+}
+.payment-options .form-check {
+    flex: 1 0 100%;
+    margin-bottom: 1rem;
 }

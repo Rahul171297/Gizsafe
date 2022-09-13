@@ -45,6 +45,10 @@
     flex-shrink: 1;
     text-align: left;
   }
+  .payment-options .form-check {
+    flex: 1 0 50%;
+    margin-bottom: 1.5rem;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -157,6 +161,15 @@
   }
   .pricing-content .translated-column {
     transform: translateY(-25%);
+  }
+  .plan-summary-card > * {
+    display: flex;
+    column-gap: 1.5rem;
+    align-items: center;
+  }
+  .plan-summary-card .amount-details .small {
+    position: absolute;
+    inset: auto auto -1.5rem 6.5rem;
   }
 }
 
