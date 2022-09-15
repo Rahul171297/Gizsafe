@@ -84,6 +84,19 @@ function hidePricingForm() {
   }
 }
 
+//Scroll to Top
+$(window).scroll(function () {
+  if ($(this).scrollTop() >= 50) {
+      $('.scroll-to-top').addClass("in");
+  } else {
+      $('.scroll-to-top').removeClass("in");
+  }
+});
+$('.scroll-to-top').click(function () {
+  $('body,html').animate({
+      scrollTop: 0
+  }, 500);
+});
 
 // To initialize the Animate onScroll effect
 AOS.init();
