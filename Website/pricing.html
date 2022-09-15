@@ -26,12 +26,12 @@
   </head>
   <body>
     <!-- Header Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary smooth_cubic_trans">
+    <nav id="navbar_top" class="navbar navbar-expand-md navbar-dark bg-primary smooth_cubic_trans">
       <div class="container-fluid container-lg smooth_ease_trans">
         <a class="navbar-brand smooth_cubic_trans p-0 m-0" href="index.html">
           <img class="img-fluid smooth_cubic_trans" src="images/common/logo-icon.svg" alt="Gizsafe Logo Icon">
         </a>
-        <button class="navbar-toggler smooth_cubic_trans collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler smooth_cubic_trans collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="toggler_icons smooth_cubic_trans">
             <span class="icon-bar first-bar smooth_cubic_trans"></span>
             <span class="icon-bar second-bar smooth_cubic_trans"></span>
@@ -39,7 +39,7 @@
           </span>
           <span class="toggler-txt">Menu</span>
         </button>
-        <div class="collapse navbar-collapse smooth_ease_trans" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse smooth_ease_trans" id="navmenu">
           <ul class="navbar-nav smooth_ease_trans py-4 py-md-0 ms-md-auto">
             <li class="nav-item smooth_ease_trans">
               <a class="nav-link px-3 px-md-0 fast_cubic_trans" href="how-it-works.html">How it works</a>
@@ -48,13 +48,13 @@
               <a class="nav-link px-3 px-md-0 fast_cubic_trans" href="solutions.html">Solution</a>
             </li>
             <li class="nav-item smooth_ease_trans">
-              <a class="nav-link px-3 px-md-0 fast_cubic_trans active" aria-current="page" href="pricing.html">Pricing</a>
+              <a class="nav-link px-3 px-md-0 fast_cubic_trans active" aria-current="page" href="#">Pricing</a>
             </li>
             <li class="nav-item smooth_ease_trans">
               <a class="nav-link px-3 px-md-0 fast_cubic_trans" href="contact-us.html">Contact Us</a>
             </li>
             <li class="nav-item smooth_ease_trans nav-btn">
-              <a class="btn btn-light rounded-pill fast_cubic_trans" href="#">Download</a>
+              <a class="btn btn-light rounded-pill fast_cubic_trans" href="#download">Download</a>
             </li>
           </ul>
         </div>
@@ -91,7 +91,7 @@
                 <li class="mb-2">Adipiscing ipsum</li>
                 <li>Dolor sit amet elite</li>
               </ul>
-              <a href="pricing-form.html" id="plan-selection" class="btn btn-light btn-hover-primary mx-auto" type="button">Select Plan</a>
+              <button id="plan-selection" class="btn btn-light btn-hover-primary mx-auto" type="button" onclick="showPricingForm()">Select Plan</button>
               <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 320" preserveAspectRatio="none">
                 <defs>
                   <path id="animated-path" d="M0,192L48,181.3C96,171,192,149,288,122.7C384,96,480,64,576,96C672,128,768,224,864,224C960,224,1056,128,1152,117.3C1248,107,1344,181,1392,218.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" />
@@ -117,7 +117,7 @@
                 <li class="mb-2">Adipiscing ipsum</li>
                 <li>Dolor sit amet elite</li>
               </ul>
-              <a href="pricing-form.html" id="plan-selection" class="btn btn-light btn-hover-primary mx-auto" type="button">Select Plan</a>
+              <button id="plan-selection" class="btn btn-light btn-hover-primary mx-auto" type="button" onclick="showPricingForm()">Select Plan</button>
               <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 320" preserveAspectRatio="none">
                 <defs>
                   <path id="animated-path" d="M0,192L48,181.3C96,171,192,149,288,122.7C384,96,480,64,576,96C672,128,768,224,864,224C960,224,1056,128,1152,117.3C1248,107,1344,181,1392,218.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" />
@@ -143,7 +143,7 @@
                 <li class="mb-2">Adipiscing ipsum</li>
                 <li>Dolor sit amet elite</li>
               </ul>
-              <a href="pricing-form.html" id="plan-selection" class="btn btn-light btn-hover-primary mx-auto" type="button">Select Plan</a>
+              <button id="plan-selection" class="btn btn-light btn-hover-primary mx-auto" type="button" onclick="showPricingForm()">Select Plan</button>
               <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 320" preserveAspectRatio="none">
                 <defs>
                   <path id="animated-path" d="M0,192L48,181.3C96,171,192,149,288,122.7C384,96,480,64,576,96C672,128,768,224,864,224C960,224,1056,128,1152,117.3C1248,107,1344,181,1392,218.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" />
@@ -158,11 +158,103 @@
             </div>
           </div>
         </div>
-        <p class="note mt-5 mb-0"><span class="fw-bold text-danger me-2">*Note :</span> To cancel subscription <a class="btn-link text-decoration-none" href="contact-us.html">Contact Us</a>.</p>
+        <p class="note d-none mt-5 mb-0"><span class="fw-bold text-danger me-2">*Note :</span> To cancel subscription <a class="btn-link text-decoration-none" href="contact-us.html">Contact Us</a>.</p>
       </div>
     </section>
+    <!-- Pricing Form Container Section -->
+    <main id="pricingForm" class="hideContent trans__origin-top smooth_ease_trans">
+      <!-- Pricing Summary Section -->
+      <section class="pricing-summary pb-5">
+        <div class="container pb-md-5 smooth_ease_trans">
+          <button class="btn btn-link fw-semibold text-decoration-none" onclick="hidePricingForm()">&lsaquo; Back</button>
+          <div class="plan-summary-card mt-5 p-3 p-sm-4 pb-lg-5 rounded-4 smooth_ease_trans">
+            <div class="plan-name smooth_ease_trans">
+              <p class="text-capitalize mb-0 smooth_ease_trans">Your selected plan</p>
+              <h3 class="fw-bold text-muted mb-lg-0 smooth_ease_trans">Half-Yearly</h3>
+            </div>
+            <div class="amount-details smooth_ease_trans">
+              <p class="text-capitalize mb-0 smooth_ease_trans">Total Price</p>
+              <h3 class="fw-bold text-dark mb-lg-0 smooth_ease_trans">$ 199.00 <span>per 6 months</span></h3>
+              <p class="small mb-0 smooth_ease_trans">(all taxes included)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Pricing Form Section -->
+      <section class="form-wrapper pb-5">
+        <div class="container smooth_ease_trans">
+          <h3 class="form-heading text-uppercase fw-bold smooth_ease_trans">Payment Options</h3>
+          <div class="payment-options py-4 py-lg-5 smooth_ease_trans">
+            <div class="form-check smooth_ease_trans">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="paytm" value="Paytm">
+              <label class="form-check-label fw-medium smooth_ease_trans" for="paytm">Paytm</label>
+            </div>
+            <div class="form-check smooth_ease_trans">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="debitCard" value="Debit Card">
+              <label class="form-check-label fw-medium smooth_ease_trans" for="debitCard">Debit Card</label>
+            </div>
+            <div class="form-check smooth_ease_trans">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="creditCard" value="Credit Card">
+              <label class="form-check-label fw-medium smooth_ease_trans" for="creditCard">Credit Card</label>
+            </div>
+            <div class="form-check smooth_ease_trans">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="upi" value="UPI">
+              <label class="form-check-label fw-medium smooth_ease_trans" for="upi">UPI</label>
+            </div>
+            <div class="form-check smooth_ease_trans">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gpayPhonepay" value="Gpay/Phonepay">
+              <label class="form-check-label fw-medium smooth_ease_trans" for="gpayPhonepay">Gpay/Phonepay</label>
+            </div>
+          </div>
+          <h3 class="form-heading text-uppercase fw-bold smooth_ease_trans">Payment Details</h3>
+          <form class="payment-form needs-validation py-4 py-lg-5 smooth_ease_trans" action="#" method="get" novalidate>
+            <div class="row mb-4 mb-lg-5">
+              <label for="validationCustom01" class="col-sm-3 col-lg-2 col-form-label">Card Number</label>
+              <div class="col">
+                <input type="tel" class="form-control" placeholder="0000-0000-0000-0000" maxlength="16" id="validationCustom01" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provide a valid Card Number.</div>
+              </div>
+            </div>
+            <div class="row mb-4 mb-lg-5">
+              <label for="validationCustom02" class="col-sm-3 col-lg-2 col-form-label">Card Holder</label>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Enter the person name from card" id="validationCustom02" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please recheck Card Holder's name.</div>
+              </div>
+            </div>
+            <div class="row mb-5 gy-4 gy-lg-0">
+              <div class="col-12 col-lg-6">
+                <div class="row">
+                  <label for="validationCustom03" class="col-sm-3 col-lg-4 col-form-label">Expiry Date</label>
+                  <div class="col">
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Month, Year" onfocus="(this.type='month')" onblur="(this.type='month')" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">This expiry date doesn't match with the card.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="row">
+                  <label for="validationCustom03" class="col-sm-3 col-form-label">CVV</label>
+                  <div class="col">
+                    <input type="number" placeholder="xxx" maxlength="3" oninput="this.value=this.value.slice(0,this.maxLength)" class="form-control" id="validationCustom03" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please check the CVV in back of your card.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary mx-auto" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
     <!-- Plan Details Section -->
-    <section class="plan-details pb-5 pt-md-5">
+    <section class="plan-details trans__origin-bottom showContent smooth_ease_trans pb-5 pt-md-5">
       <div class="container smooth_ease_trans">
         <h3 class="title fw-bold text-dark mb-5">Details</h3>
         <div class="first-plan-details mb-5">
@@ -184,7 +276,7 @@
       <div class="sec-spacer d-none d-md-block"></div>
     </section>
     <!-- Download App Section -->
-    <section class="download-app py-5 bg-primary">
+    <section id="download" class="download-app py-5 bg-primary">
       <div class="container py-md-5 py-lg-4 smooth_ease_trans">
         <div class="row align-items-center smooth_ease_trans">
           <div class="col-lg-6 order-last order-lg-first smooth_ease_trans">
@@ -274,10 +366,7 @@
     </footer>
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/counterup.min.js"></script>
     <script src="js/custom.js"></script>
   </body>
 </html>

@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <!-- Required CSS -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/animation.css" />
@@ -26,12 +29,12 @@
   </head>
   <body>
     <!-- Header Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary smooth_cubic_trans py-xl-3">
+    <nav id="navbar_top" class="navbar navbar-expand-md navbar-dark bg-primary smooth_ease_trans py-xl-3">
       <div class="container-fluid container-lg smooth_ease_trans">
-        <a class="navbar-brand smooth_cubic_trans p-0 m-0" href="index.html">
+        <a class="navbar-brand smooth_cubic_trans p-0 m-0" href="#">
           <img class="img-fluid smooth_cubic_trans" src="images/common/logo-icon.svg" alt="Gizsafe Logo Icon">
         </a>
-        <button class="navbar-toggler smooth_cubic_trans collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler smooth_cubic_trans collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="toggler_icons smooth_cubic_trans">
             <span class="icon-bar first-bar smooth_cubic_trans"></span>
             <span class="icon-bar second-bar smooth_cubic_trans"></span>
@@ -39,7 +42,7 @@
           </span>
           <span class="toggler-txt">Menu</span>
         </button>
-        <div class="collapse navbar-collapse smooth_ease_trans" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse smooth_ease_trans" id="navmenu">
           <ul class="navbar-nav smooth_ease_trans py-4 py-md-0 ms-md-auto">
             <!-- <li class="nav-item">
               <a class="nav-link px-3 px-md-0 fast_cubic_trans active" aria-current="page" href="#">Home</a>
@@ -57,7 +60,7 @@
               <a class="nav-link px-3 px-md-0 fast_cubic_trans" href="contact-us.html">Contact Us</a>
             </li>
             <li class="nav-item smooth_ease_trans nav-btn">
-              <a class="btn btn-light rounded-pill fast_cubic_trans" href="#">Download</a>
+              <a class="btn btn-light rounded-pill fast_cubic_trans" href="#download">Download</a>
             </li>
           </ul>
         </div>
@@ -92,7 +95,7 @@
       </div>
     </section>
     <!-- Main Particle Section -->
-    <main class="particle-section py-md-5">
+    <main id="particles-js" class="particle-section py-md-5">
       <section class="main-content pb-5 pt-md-5">
         <div class="sec-spacer d-none d-md-block"></div>
         <div class="container py-md-5">
@@ -274,7 +277,7 @@
       </div>
     </section>
     <!-- Download App Section -->
-    <section class="download-app py-5 bg-primary">
+    <section id="download" class="download-app py-5 bg-primary">
       <div class="container py-md-5 py-lg-4 smooth_ease_trans">
         <div class="row align-items-center smooth_ease_trans">
           <div class="col-lg-6 order-last order-lg-first smooth_ease_trans">
@@ -576,7 +579,7 @@
         <div class="row justify-content-between smooth_ease_trans">
           <div class="col-lg-4 col-xxl-3 smooth_ease_trans">
             <div class="footer-about text-center text-lg-start">
-              <a class="footer-logo smooth_cubic_trans" href="index.html">
+              <a class="footer-logo smooth_cubic_trans" href="#">
                 <img class="img-fluid smooth_cubic_trans" src="images/common/footer-logo.svg" alt="Gizsafe Logo">
               </a>
               <p class="content smooth_ease_trans lh-lg mb-0 py-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
@@ -631,8 +634,18 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/counterup.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/custom.particles.js"></script>
     <script src="js/custom.js"></script>
+
+    <script>
+      $(".counter").counterUp({
+        delay: 10,
+        time: 1000,
+      });
+    </script>
   </body>
 </html>

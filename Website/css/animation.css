@@ -2,109 +2,102 @@
 
 /* Animation for Ripple Effect */
 @-webkit-keyframes ripple-effect {
-  0% {
-    opacity: 1;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(2);
-  }
+  0% { opacity: 1; transform: scale(0); }
+  100% { opacity: 0; transform: scale(2); }
 }
 @-moz-keyframes ripple-effect {
-  0% {
-    opacity: 1;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(2);
-  }
+  0% { opacity: 1; transform: scale(0); }
+  100% { opacity: 0; transform: scale(2); }
 }
 @-ms-keyframes ripple-effect {
-  0% {
-    opacity: 1;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(2);
-  }
+  0% { opacity: 1; transform: scale(0); }
+  100% { opacity: 0; transform: scale(2); }
 }
 @-o-keyframes ripple-effect {
-  0% {
-    opacity: 1;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(2);
-  }
+  0% { opacity: 1; transform: scale(0); }
+  100% { opacity: 0; transform: scale(2); }
 }
 @keyframes ripple-effect {
-  0% {
-    opacity: 1;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(2);
-  }
+  0% { opacity: 1; transform: scale(0); }
+  100% { opacity: 0; transform: scale(2); }
 }
 
 /* Animation for Plan Card Waves */
 @-webkit-keyframes move-waves {
-  0% {
-      transform: translate3d(-25%, 0, 0);
-  }
-  50% {
-      transform: translate3d(-5%, 0, 0);
-  }
-  100% {
-      transform: translate3d(-50%, 0, 0);
-  }
+  0% { transform: translate3d(-25%, 0, 0); }
+  50% { transform: translate3d(-5%, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 @-moz-keyframes move-waves {
-  0% {
-      transform: translate3d(-25%, 0, 0);
-  }
-  50% {
-      transform: translate3d(-5%, 0, 0);
-  }
-  100% {
-      transform: translate3d(-50%, 0, 0);
-  }
+  0% { transform: translate3d(-25%, 0, 0); }
+  50% { transform: translate3d(-5%, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 @-ms-keyframes move-waves {
-  0% {
-      transform: translate3d(-25%, 0, 0);
-  }
-  50% {
-      transform: translate3d(-5%, 0, 0);
-  }
-  100% {
-      transform: translate3d(-50%, 0, 0);
-  }
+  0% { transform: translate3d(-25%, 0, 0); }
+  50% { transform: translate3d(-5%, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 @-o-keyframes move-waves {
-  0% {
-      transform: translate3d(-25%, 0, 0);
-  }
-  50% {
-      transform: translate3d(-5%, 0, 0);
-  }
-  100% {
-      transform: translate3d(-50%, 0, 0);
-  }
+  0% { transform: translate3d(-25%, 0, 0); }
+  50% { transform: translate3d(-5%, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 @keyframes move-waves {
-  0% {
-      transform: translate3d(-25%, 0, 0);
-  }
-  50% {
-      transform: translate3d(-5%, 0, 0);
-  }
-  100% {
-      transform: translate3d(-50%, 0, 0);
-  }
+  0% { transform: translate3d(-25%, 0, 0); }
+  50% { transform: translate3d(-5%, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+/* Animation for solution connector path */
+@-webkit-keyframes pathconnector {
+  0% { opacity: 0; transform: scaleX(0); transform-origin: left; }
+  50% { opacity: 1; transform: scaleX(1.5); transform-origin: center; }
+  100% { opacity: 0; transform: scaleX(0); transform-origin: right; }
+}
+@-moz-keyframes pathconnector {
+  0% { opacity: 0; transform: scaleX(0); transform-origin: left; }
+  50% { opacity: 1; transform: scaleX(1.5); transform-origin: center; }
+  100% { opacity: 0; transform: scaleX(0); transform-origin: right; }
+}
+@-ms-keyframes pathconnector {
+  0% { opacity: 0; transform: scaleX(0); transform-origin: left; }
+  50% { opacity: 1; transform: scaleX(1.5); transform-origin: center; }
+  100% { opacity: 0; transform: scaleX(0); transform-origin: right; }
+}
+@-o-keyframes pathconnector {
+  0% { opacity: 0; transform: scaleX(0); transform-origin: left; }
+  50% { opacity: 1; transform: scaleX(1.5); transform-origin: center; }
+  100% { opacity: 0; transform: scaleX(0); transform-origin: right; }
+}
+@keyframes pathconnector {
+  0% { opacity: 0; transform: scaleX(0); transform-origin: left; }
+  50% { opacity: 1; transform: scaleX(1.5); transform-origin: center; }
+  100% { opacity: 0; transform: scaleX(0); transform-origin: right; }
+}
+/* Animation for solution connector path in reverse */
+@-webkit-keyframes pathconnectorreverse {
+  0% { opacity: 0; transform: scaleX(0); transform-origin: right; }
+  50% { opacity: 1; transform: scaleX(1.5); transform-origin: center; }
+  100% { opacity: 0; transform: scaleX(0); transform-origin: left; }
+}
+@-moz-keyframes pathconnectorreverse {
+  0% { opacity: 0; transform: scaleX(0); transform-origin: right; }
+  50% { opacity: 1; transform: scaleX(1.5); transform-origin: center; }
+  100% { opacity: 0; transform: scaleX(0); transform-origin: left; }
+}
+@-ms-keyframes pathconnectorreverse {
+  0% { opacity: 0; transform: scaleX(0); transform-origin: right; }
+  50% { opacity: 1; transform: scaleX(1.5); transform-origin: center; }
+  100% { opacity: 0; transform: scaleX(0); transform-origin: left; }
+}
+@-o-keyframes pathconnectorreverse {
+  0% { opacity: 0; transform: scaleX(0); transform-origin: right; }
+  50% { opacity: 1; transform: scaleX(1.5); transform-origin: center; }
+  100% { opacity: 0; transform: scaleX(0); transform-origin: left; }
+}
+@keyframes pathconnectorreverse {
+  0% { opacity: 0; transform: scaleX(0); transform-origin: right; }
+  50% { opacity: 1; transform: scaleX(1.5); transform-origin: center; }
+  100% { opacity: 0; transform: scaleX(0); transform-origin: left; }
 }

@@ -65,6 +65,9 @@
   .navbar-brand {
     width: 4rem;
   }
+  #navbar_top.scrolled-up .navbar-brand, #navbar_top.scrolled-down .navbar-brand {
+    width: 3rem;
+  }
   .inner-banner {
     min-height: calc(100vh - 88px);
   }
@@ -100,6 +103,9 @@
     width: 6rem;
     --bs-btn-border-width: 6px;
     --bs-btn-font-size: 1.75rem;
+  }
+  .download-app {
+    scroll-margin: 7.5rem;
   }
   .carousel-indicators [data-bs-target] {
     width: 1rem;
@@ -207,6 +213,33 @@
   .steps-container {
     gap: 10rem;
   }
+  .step-connector {
+    width: 70%;
+    height: 1rem;
+    inset: 0 auto auto 5rem;
+    transform: rotateZ(11deg);
+  }
+  .step-connector:nth-child(even) {
+    inset: 0 auto auto 2rem;
+  }
+  .step-connector.path_1 {
+    top: 10rem;
+  }
+  .step-connector.path_2 {
+    top: 20rem;
+  }
+  .step-connector.path_3 {
+    top: 41rem;
+  }
+  .step-connector.path_4 {
+    top: 51rem;
+  }
+  .step-connector.path_5 {
+    top: 71.5rem;
+  }
+  .step-connector.path_6 {
+    top: 81.5rem;
+  }
   .solution-steps {
     flex-basis: 35%;
   }
@@ -249,6 +282,31 @@
   .count-detail {
     flex-basis: calc(25% - 0.75rem);
   }
+  .step-connector {
+    transform: rotateZ(10deg);
+  }
+  .step-connector:nth-child(even) {
+    inset: 0 auto auto 4rem;
+    transform: rotateZ(-23.5deg);
+  }
+  .step-connector.path_1 {
+    top: 11.5rem;
+  }
+  .step-connector.path_2 {
+    top: 22rem;
+  }
+  .step-connector.path_3 {
+    top: 44.5rem;
+  }
+  .step-connector.path_4 {
+    top: 55.5rem;
+  }
+  .step-connector.path_5 {
+    top: 77.5rem;
+  }
+  .step-connector.path_6 {
+    top: 88.5rem;
+  }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -261,5 +319,29 @@
   }
   .play-icon {
     --bs-btn-font-size: 2rem;
+  }
+  .step-connector {
+    transform: rotateZ(9deg);
+  }
+  .step-connector:nth-child(even) {
+    transform: rotateZ(-20.5deg);
+  }
+  .step-connector.path_1 {
+    top: 13rem;
+  }
+  .step-connector.path_2 {
+    top: 25.5rem;
+  }
+  .step-connector.path_3 {
+    top: 48rem;
+  }
+  .step-connector.path_4 {
+    top: 61rem;
+  }
+  .step-connector.path_5 {
+    top: 83.5rem;
+  }
+  .step-connector.path_6 {
+    top: 96rem;
   }
 }
