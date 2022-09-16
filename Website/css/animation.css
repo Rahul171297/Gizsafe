@@ -101,3 +101,30 @@
   50% { opacity: 1; transform: scaleX(1.5); transform-origin: center; }
   100% { opacity: 0; transform: scaleX(0); transform-origin: left; }
 }
+
+/* Scroll To Top Button Hover Animation */
+@-webkit-keyframes float-icon {
+  0% { transform: translateY(10%); }
+  50% { transform: translateY(-10%); }
+  100% { transform: translateY(10%); }
+}
+@-moz-keyframes float-icon {
+  0% { transform: translateY(10%); }
+  50% { transform: translateY(-10%); }
+  100% { transform: translateY(10%); }
+}
+@-ms-keyframes float-icon {
+  0% { transform: translateY(10%); }
+  50% { transform: translateY(-10%); }
+  100% { transform: translateY(10%); }
+}
+@-o-keyframes float-icon {
+  0% { transform: translateY(10%); }
+  50% { transform: translateY(-10%); }
+  100% { transform: translateY(10%); }
+}
+@keyframes float-icon {
+  0% { transform: translateY(10%); }
+  50% { transform: translateY(-10%); }
+  100% { transform: translateY(10%); }
+}

@@ -91,7 +91,7 @@
                 <li class="mb-2">Adipiscing ipsum</li>
                 <li>Dolor sit amet elite</li>
               </ul>
-              <button id="plan-selection" class="btn btn-light btn-hover-primary mx-auto" type="button" onclick="showPricingForm()">Select Plan</button>
+              <button id="quarterlyPlan" class="btn btn-light btn-hover-primary mx-auto" type="button" onclick="showPricingForm(1)">Select Plan</button>
               <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 320" preserveAspectRatio="none">
                 <defs>
                   <path id="animated-path" d="M0,192L48,181.3C96,171,192,149,288,122.7C384,96,480,64,576,96C672,128,768,224,864,224C960,224,1056,128,1152,117.3C1248,107,1344,181,1392,218.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" />
@@ -117,7 +117,7 @@
                 <li class="mb-2">Adipiscing ipsum</li>
                 <li>Dolor sit amet elite</li>
               </ul>
-              <button id="plan-selection" class="btn btn-light btn-hover-primary mx-auto" type="button" onclick="showPricingForm()">Select Plan</button>
+              <button id="halfYearlyPlan" class="btn btn-light btn-hover-primary mx-auto" type="button" onclick="showPricingForm(2)">Select Plan</button>
               <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 320" preserveAspectRatio="none">
                 <defs>
                   <path id="animated-path" d="M0,192L48,181.3C96,171,192,149,288,122.7C384,96,480,64,576,96C672,128,768,224,864,224C960,224,1056,128,1152,117.3C1248,107,1344,181,1392,218.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" />
@@ -143,7 +143,7 @@
                 <li class="mb-2">Adipiscing ipsum</li>
                 <li>Dolor sit amet elite</li>
               </ul>
-              <button id="plan-selection" class="btn btn-light btn-hover-primary mx-auto" type="button" onclick="showPricingForm()">Select Plan</button>
+              <button id="yearlyPlan" class="btn btn-light btn-hover-primary mx-auto" type="button" onclick="showPricingForm(3)">Select Plan</button>
               <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 320" preserveAspectRatio="none">
                 <defs>
                   <path id="animated-path" d="M0,192L48,181.3C96,171,192,149,288,122.7C384,96,480,64,576,96C672,128,768,224,864,224C960,224,1056,128,1152,117.3C1248,107,1344,181,1392,218.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" />
@@ -158,7 +158,7 @@
             </div>
           </div>
         </div>
-        <p class="note d-none mt-5 mb-0"><span class="fw-bold text-danger me-2">*Note :</span> To cancel subscription <a class="btn-link text-decoration-none" href="contact-us.html">Contact Us</a>.</p>
+        <p id="note" class="d-none mt-5 mb-0"><span class="fw-bold text-danger me-2">*Note :</span> To cancel subscription <a class="btn-link text-decoration-none" href="contact-us.html">Contact Us</a>.</p>
       </div>
     </section>
     <!-- Pricing Form Container Section -->
@@ -247,7 +247,7 @@
               </div>
             </div>
             <div class="col-12">
-              <button class="btn btn-primary mx-auto" type="submit">Submit</button>
+              <button class="btn btn-primary mx-auto"  onclick="formSubmit()" type="submit">Submit</button>
             </div>
           </form>
         </div>
@@ -364,6 +364,12 @@
         </div>
       </div>
     </footer>
+    <!-- Scroll To Top of the page button -->
+    <a class="scroll-to-top slow_ease_trans fade" title="Click to Scroll Top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+      </svg>
+    </a>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>

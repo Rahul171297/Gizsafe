@@ -56,10 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Open the Pricing Form on Plan Select button click
-function showPricingForm() {
+function abc() {
   let pricing_Form = document.getElementById("pricingForm");
   let plan_Details = document.getElementsByClassName("plan-details")[0];
-
   if (pricing_Form.classList.contains("hideContent")) {
     pricing_Form.classList.remove("hideContent");
     pricing_Form.classList.add("showContent");
@@ -70,6 +69,35 @@ function showPricingForm() {
   }
 }
 
+// Open the Pricing Form on Plan Select button click
+function showPricingForm(type) {
+  if (type) {
+    let plan1 = document.getElementById("quarterlyPlan");
+    let plan2 = document.getElementById("halfYearlyPlan");
+    let plan3 = document.getElementById("yearlyPlan");
+
+    plan1.classList.remove("active");
+    plan2.classList.remove("active");
+    plan3.classList.remove("active");
+
+    switch (type) {
+      case 1:
+        plan1.classList.add("active");
+        abc();
+        break;
+      case 2:
+        plan2.classList.add("active");
+        abc();
+        break;
+      case 3:
+        plan3.classList.add("active");
+        abc();
+        break;
+      default:
+        break;
+    }
+  }
+}
 function hidePricingForm() {
   let pricing_Form = document.getElementById("pricingForm");
   let plan_Details = document.getElementsByClassName("plan-details")[0];
@@ -83,19 +111,28 @@ function hidePricingForm() {
     plan_Details.classList.add("showContent");
   }
 }
+// To change note text display based on the plan selection
+function formSubmit() {
+  let note = document.getElementById("note");
+  note.classList.remove("d-none");
+  hidePricingForm();
+}
 
 //Scroll to Top
 $(window).scroll(function () {
   if ($(this).scrollTop() >= 50) {
-      $('.scroll-to-top').addClass("in");
+    $(".scroll-to-top").addClass("in");
   } else {
-      $('.scroll-to-top').removeClass("in");
+    $(".scroll-to-top").removeClass("in");
   }
 });
-$('.scroll-to-top').click(function () {
-  $('body,html').animate({
-      scrollTop: 0
-  }, 500);
+$(".scroll-to-top").click(function () {
+  $("body,html").animate(
+    {
+      scrollTop: 0,
+    },
+    500
+  );
 });
 
 // To initialize the Animate onScroll effect

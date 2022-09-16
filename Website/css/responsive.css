@@ -58,6 +58,12 @@
   .step-icon {
     max-width: 60%;
   }
+  .scroll-to-top {
+    width: 3rem;
+    height: 3rem;
+    inset: auto 1rem 1rem auto;
+    transform: translateX(calc(100% + 3rem));
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -143,6 +149,9 @@
   }
   .solution-steps {
     flex-basis: 40%;
+  }
+  .scroll-to-top {
+    inset: auto 1.5rem 1.5rem auto;
   }
 }
 
