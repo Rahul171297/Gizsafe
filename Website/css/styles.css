@@ -285,23 +285,26 @@ input[type=number] {
     content: '';
     height: 100%;
     position: absolute;
+    opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0);
     -webkit-transform-origin: 50%;
     transform-origin: 50%;
-    background-color: var(--bs-secondary);
-    -webkit-transition: var(--fast-cubic-transition);
-    -moz-transition: var(--fast-cubic-transition);
-    -ms-transition: var(--fast-cubic-transition);
-    -o-transition: var(--fast-cubic-transition);
-    transition: var(--fast-cubic-transition);
+    background-color: #25316D;
+    -webkit-transition: var(--fast-ease-transition);
+    -moz-transition: var(--fast-ease-transition);
+    -ms-transition: var(--fast-ease-transition);
+    -o-transition: var(--fast-ease-transition);
+    transition: var(--fast-ease-transition);
 }
 .btn-hover-primary::before {
+    opacity: 0;
     background-color: var(--bs-primary);
 }
-.btn-dark:hover::before, .btn-dark:focus::before, .btn-dark.active::before,
-.btn-light:hover::before, .btn-light:focus::before, .btn-light.active::before,
-.btn-primary:hover::before, .btn-primary:focus::before, .btn-primary.active::before {
+.btn-dark:hover::before, .btn-dark.active::before,
+.btn-light:hover::before, .btn-light.active::before,
+.btn-primary:hover::before, .btn-primary.active::before {
+    opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
 }
