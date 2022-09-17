@@ -110,6 +110,14 @@
     --bs-btn-border-width: 6px;
     --bs-btn-font-size: 1.75rem;
   }
+  #videoModal .modal-dialog {
+    --bs-modal-width: 650px;
+  }
+  #videoModal .btn-close {
+    width: 2rem;
+    height: 2rem;
+    inset: -1rem -1rem auto auto;
+}
   .download-app {
     scroll-margin: 7.5rem;
   }
@@ -183,6 +191,9 @@
   }
   .icon-block {
     min-height: 20rem;
+  }
+  #videoModal .modal-dialog {
+    --bs-modal-width: 800px;
   }
   .banner-btns, .download-app-btns {
     gap: 1.5rem;
@@ -328,6 +339,9 @@
   }
   .play-icon {
     --bs-btn-font-size: 2rem;
+  }
+  #videoModal .modal-dialog {
+    --bs-modal-width: 1000px;
   }
   .step-connector {
     transform: rotateZ(9deg);

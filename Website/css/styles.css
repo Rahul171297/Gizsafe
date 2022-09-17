@@ -597,6 +597,27 @@ canvas.particles-js-canvas-el {
     align-items: flex-end;
     justify-content: center;
 }
+#videoModal .modal-body {
+    --bs-modal-padding: 0.25rem;
+}
+#videoModal .btn-close {
+    opacity: 1;
+    z-index: 99;
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    inset: 0 0 auto auto;
+    background: var(--bs-primary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E") center/1em auto no-repeat;
+}
+#videoModal .btn-close:hover {
+    transform: rotate(180deg);
+    background: #25316D url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E") center/1em auto no-repeat;
+}
+.relevant-video iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 0.25rem;
+}
 
 /* Download App Section Styling */
 .download-app {
