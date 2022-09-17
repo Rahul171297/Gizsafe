@@ -22,13 +22,13 @@
   });
 })();
 
-// Scroll effect for the header navigation
-
 document.addEventListener("DOMContentLoaded", function () {
   let nav_autohide = document.getElementById("navbar_top");
   let menu_collapse = document.getElementById("navmenu");
   let btn_collapse = document.getElementsByClassName("navbar-toggler")[0];
   let last_scroll_top = 0;
+
+  // Scroll effect for the header navigation
   if (nav_autohide) {
     window.addEventListener("scroll", function () {
       let scroll_top = window.scrollY;
@@ -53,10 +53,29 @@ document.addEventListener("DOMContentLoaded", function () {
       last_scroll_top = scroll_top;
     });
   }
+
+  // Scroll to Top effect
+  let scrollbtn = document.getElementById("scrollUp");
+
+  if (scrollbtn) {
+    window.addEventListener("scroll", function () {
+      let scroll_top = window.scrollY;
+      if (scroll_top >= 50) {
+        scrollbtn.classList.add("in");
+      } else {
+        scrollbtn.classList.remove("in");
+      }
+    });
+    scrollbtn.onclick = function() {
+      setTimeout(function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 500);
+    };
+  }
 });
 
 // Open the Pricing Form on Plan Select button click
-function abc() {
+function pricingFunction() {
   let pricing_Form = document.getElementById("pricingForm");
   let plan_Details = document.getElementsByClassName("plan-details")[0];
   if (pricing_Form.classList.contains("hideContent")) {
@@ -83,15 +102,15 @@ function showPricingForm(type) {
     switch (type) {
       case 1:
         plan1.classList.add("active");
-        abc();
+        pricingFunction();
         break;
       case 2:
         plan2.classList.add("active");
-        abc();
+        pricingFunction();
         break;
       case 3:
         plan3.classList.add("active");
-        abc();
+        pricingFunction();
         break;
       default:
         break;
@@ -117,23 +136,6 @@ function formSubmit() {
   note.classList.remove("d-none");
   hidePricingForm();
 }
-
-//Scroll to Top
-$(window).scroll(function () {
-  if ($(this).scrollTop() >= 50) {
-    $(".scroll-to-top").addClass("in");
-  } else {
-    $(".scroll-to-top").removeClass("in");
-  }
-});
-$(".scroll-to-top").click(function () {
-  $("body,html").animate(
-    {
-      scrollTop: 0,
-    },
-    500
-  );
-});
 
 // To initialize the Animate onScroll effect
 AOS.init();

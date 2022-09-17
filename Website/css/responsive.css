@@ -58,7 +58,7 @@
   .step-icon {
     max-width: 60%;
   }
-  .scroll-to-top {
+  #scrollUp {
     width: 3rem;
     height: 3rem;
     inset: auto 1rem 1rem auto;
@@ -150,7 +150,7 @@
   .solution-steps {
     flex-basis: 40%;
   }
-  .scroll-to-top {
+  #scrollUp {
     inset: auto 1.5rem 1.5rem auto;
   }
 }
