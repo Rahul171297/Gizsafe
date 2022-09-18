@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page Title -->
+    <title>Gizsafe</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <!-- Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- Required CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <nav id="navbar_top" class="navbar navbar-expand-md navbar-dark bg-primary smooth_cubic_trans">
+      <div class="container-fluid container-lg smooth_ease_trans">
+        <a class="navbar-brand smooth_cubic_trans p-0 m-0" href="index.html">
+          <img class="img-fluid smooth_cubic_trans" src="images/common/logo-icon.svg" alt="Gizsafe Logo Icon">
+        </a>
+        <button class="navbar-toggler smooth_cubic_trans collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler_icons smooth_cubic_trans">
+            <span class="icon-bar first-bar smooth_cubic_trans"></span>
+            <span class="icon-bar second-bar smooth_cubic_trans"></span>
+            <span class="icon-bar third-bar smooth_cubic_trans"></span>
+          </span>
+          <span class="toggler-txt">Menu</span>
+        </button>
+        <div class="collapse navbar-collapse smooth_ease_trans" id="navmenu">
+          <ul class="navbar-nav smooth_ease_trans py-4 py-md-0 ms-md-auto">
+            <li class="nav-item smooth_ease_trans">
+              <a class="nav-link px-3 px-md-0 fast_cubic_trans" href="how-it-works.html">How it works</a>
+            </li>
+            <li class="nav-item smooth_ease_trans">
+              <a class="nav-link px-3 px-md-0 fast_cubic_trans" href="faqs.html">Faqs</a>
+            </li>
+            <li class="nav-item smooth_ease_trans">
+              <a class="nav-link px-3 px-md-0 fast_cubic_trans" type="button" data-bs-toggle="modal" data-bs-target="#planModal">Plans</a>
+            </li>
+            <li class="nav-item smooth_ease_trans">
+              <a class="nav-link px-3 px-md-0 fast_cubic_trans active" aria-current="page" href="#">Contact</a>
+            </li>
+            <li class="nav-item smooth_ease_trans nav-btn">
+              <a class="btn btn-light rounded-pill fast_cubic_trans" href="#download">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="inner-banner contact-banner py-5">
+      <div class="container smooth_ease_trans">
+        <div class="row smooth_ease_trans">
+          <div class="col-lg-6 smooth_ease_trans">
+            <div class="banner-cont smooth_ease_trans text-center text-lg-start text-white">
+              <h1 class="title fw-bold smooth_ease_trans text-capitalize lh-1 pb-4">Contact us</h1>
+              <p class="detail smooth_ease_trans lh-lg mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Form Section -->
+    <section class="main-content py-5">
+      <div class="container smooth_ease_trans py-5">
+        <div class="row justify-content-center smooth_ease_trans">
+          <div class="col-md-10 col-xl-9">
+            <form class="contact-form needs-validation smooth_ease_trans" action="#" method="get" novalidate>
+              <h3 class="form-title fw-bold mb-4 mb-md-5">Fill the form below</h3>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-floating mb-3 mb-md-4">
+                    <input type="text" class="form-control" id="firstName" placeholder="John Doe" required>
+                    <label for="firstName" class="form-label">First Name</label>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please provide your First Name here.</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating mb-3 mb-md-4">
+                    <input type="text" class="form-control" id="lastName" placeholder="John Doe" required>
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please provide your Last Name here.</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating mb-3 mb-md-4">
+                    <input type="email" class="form-control" id="yourEmail" placeholder="name@example.com" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required>
+                    <label for="yourEmail" class="form-label">Your Email Id</label>
+                    <div class="valid-feedback">It is a valid Email Id!</div>
+                    <div class="invalid-feedback">Please fill a valid email.</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating mb-3 mb-md-4">
+                    <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone Number"  maxlength="10" required>
+                    <label for="phoneNumber">Your Phone Number</label>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please provide your contact number.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-floating mb-3 mb-md-4">
+                <select class="form-select" id="reasonToConnect" aria-label="Related to" required>
+                  <option selected hidden value="">Open this select menu</option>
+                  <option value="1">Problem downloading the app</option>
+                  <option value="2">Query not mentioned in FAQs</option>
+                  <option value="3">Business &amp; collaboration queries</option>
+                  <option value="4">Something else</option>
+                </select>
+                <label for="reasonToConnect">Reason To Connect</label>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please select your reason to contact us.</div>
+              </div>
+              <div class="form-floating mb-5">
+                <textarea class="form-control" placeholder="Write Your Message" id="messageArea" required></textarea>
+                <label for="messageArea">Write Your Message</label>
+                <div class="valid-feedback">Your message is important for us!</div>
+                <div class="invalid-feedback">Please write your message for us.</div>
+              </div>
+              <div class="form-btn">
+                <button type="submit" class="btn btn-primary mx-auto">Send Request</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="sec-spacer d-none d-md-block"></div>
+    </section>
+    <!-- Download App Section -->
+    <section id="download" class="download-app py-5 bg-primary">
+      <div class="container py-md-5 py-lg-4 smooth_ease_trans">
+        <div class="row align-items-center smooth_ease_trans">
+          <div class="col-lg-6 order-last order-lg-first smooth_ease_trans">
+            <div class="download-app-image text-center">
+              <img class="img-fluid smooth_cubic_trans" src="images/common/download-app-3d-image-resized.png" alt="Gizsafe 3D representation">
+            </div>
+          </div>
+          <div class="col-lg-6 order-first order-lg-last smooth_ease_trans">
+            <div class="download-app-cont smooth_ease_trans text-center text-lg-start text-white">
+              <h2 class="main-title fw-bold smooth_ease_trans pb-4">Download our app from the store</h2>
+              <p class="detail smooth_ease_trans lh-lg">In consequant, quam id sodales hendrerit, eros mi molestie leo an lacinia risus neque tristique augue. Proin tempus urna vel congue elementum. Vestibulum euismod accumsan.</p>
+              <div class="btn-group download-app-btns py-5 px-md-5 px-lg-0">
+                <a href="#" class="download-app-btn smooth_cubic_trans">
+                  <img class="img-fluid smooth_cubic_trans" src="images/common/app-store.svg" alt="Download on the App Store">
+                </a>
+                <a href="#" class="download-app-btn smooth_cubic_trans">
+                  <img class="img-fluid smooth_cubic_trans" src="images/common/google-play.svg" alt="Available on the Google Play">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-divider reverse">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path fill="#ffffff" fill-opacity="1" d="M0,224L48,197.3C96,171,192,117,288,90.7C384,64,480,64,576,101.3C672,139,768,213,864,224C960,235,1056,181,1152,170.7C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+    </section>
+    <div class="sec-spacer"></div>
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container smooth_ease_trans">
+        <div class="row justify-content-between smooth_ease_trans">
+          <div class="col-lg-4 col-xxl-3 smooth_ease_trans">
+            <div class="footer-about text-center text-lg-start">
+              <a class="footer-logo smooth_cubic_trans" href="index.html">
+                <img class="img-fluid smooth_cubic_trans" src="images/common/footer-logo.svg" alt="Gizsafe Logo">
+              </a>
+              <p class="content smooth_ease_trans lh-lg mb-0 py-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+              <div class="btn-group download-app-btns">
+                <a href="#" class="download-app-btn smooth_cubic_trans">
+                  <img class="img-fluid smooth_cubic_trans" src="images/common/app-store.svg" alt="Download on the App Store">
+                </a>
+                <a href="#" class="download-app-btn smooth_cubic_trans">
+                  <img class="img-fluid smooth_cubic_trans" src="images/common/google-play.svg" alt="Available on the Google Play">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 smooth_ease_trans">
+            <div class="site-links pt-5 pt-lg-3">
+              <h4 class="link-head">Knowledge Base</h4>
+              <ul class="list-unstyled mb-0">
+                <li><a class="link-items smooth_cubic_trans" href="#">Home Maintenance</a></li>
+                <li><a class="link-items smooth_cubic_trans" href="#">Featured Article</a></li>
+              </ul>
+            </div>
+            <div class="site-links pt-5">
+              <h4 class="link-head">Contact Us</h4>
+              <ul class="list-unstyled mb-0">
+                <li><a class="link-items smooth_cubic_trans" href="mailto:gizsafe@gmail.com">gizsafe@gmail.com</a></li>
+                <li><a class="link-items smooth_cubic_trans" href="tel: +91 8973728787">+91 - 8973728787</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 smooth_ease_trans">
+            <div class="site-links pt-5 pt-lg-3">
+              <h4 class="link-head">Knowledge Base</h4>
+              <ul class="list-unstyled mb-0">
+                <li><a class="link-items smooth_cubic_trans" href="#">Home Maintenance</a></li>
+                <li><a class="link-items smooth_cubic_trans" href="#">Featured Article</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright pt-5">
+          <p class="content mb-0">Copyright @ 2020 Gizsafe</p>
+          <div class="external-links">
+            <a class="contact-link smooth_cubic_trans" href="mailto:contact@gizsafe.com">contact@gizsafe.com</a>
+            <a class="social-link smooth_cubic_trans" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="social-link smooth_cubic_trans" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a class="social-link smooth_cubic_trans" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Membership Plan Modal -->
+    <div class="modal fade" id="planModal" tabindex="-1" aria-labelledby="planModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="btn-close smooth_cubic_trans" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="relevant-video d-flex">
+              <iframe src="https://www.youtube.com/embed/dFgzHOX84xQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll To Top of the page button -->
+    <button id="scrollUp" class="slow_ease_trans fade" title="Click to Scroll Top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+      </svg>
+    </button>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

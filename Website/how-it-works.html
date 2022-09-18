@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page Title -->
+    <title>Gizsafe</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <!-- Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- Required CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <nav id="navbar_top" class="navbar navbar-expand-md navbar-dark bg-primary smooth_cubic_trans">
+      <div class="container-fluid container-lg smooth_ease_trans">
+        <a class="navbar-brand smooth_cubic_trans p-0 m-0" href="index.html">
+          <img class="img-fluid smooth_cubic_trans" src="images/common/logo-icon.svg" alt="Gizsafe Logo Icon">
+        </a>
+        <button class="navbar-toggler smooth_cubic_trans collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler_icons smooth_cubic_trans">
+            <span class="icon-bar first-bar smooth_cubic_trans"></span>
+            <span class="icon-bar second-bar smooth_cubic_trans"></span>
+            <span class="icon-bar third-bar smooth_cubic_trans"></span>
+          </span>
+          <span class="toggler-txt">Menu</span>
+        </button>
+        <div class="collapse navbar-collapse smooth_ease_trans" id="navmenu">
+          <ul class="navbar-nav smooth_ease_trans py-4 py-md-0 ms-md-auto">
+            <li class="nav-item smooth_ease_trans">
+              <a class="nav-link px-3 px-md-0 fast_cubic_trans active" aria-current="page" href="#">How it works</a>
+            </li>
+            <li class="nav-item smooth_ease_trans">
+              <a class="nav-link px-3 px-md-0 fast_cubic_trans" href="faqs.html">Faqs</a>
+            </li>
+            <li class="nav-item smooth_ease_trans">
+              <a class="nav-link px-3 px-md-0 fast_cubic_trans" type="button" data-bs-toggle="modal" data-bs-target="#planModal">Plans</a>
+            </li>
+            <li class="nav-item smooth_ease_trans">
+              <a class="nav-link px-3 px-md-0 fast_cubic_trans" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item smooth_ease_trans nav-btn">
+              <a class="btn btn-light rounded-pill fast_cubic_trans" href="#download">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="inner-banner how-banner py-5">
+      <div class="container smooth_ease_trans">
+        <div class="row smooth_ease_trans">
+          <div class="col-lg-6 smooth_ease_trans">
+            <div class="banner-cont smooth_ease_trans text-center text-lg-start text-white">
+              <h1 class="title fw-bold smooth_ease_trans text-capitalize lh-1 pb-4">How gizsafe works</h1>
+              <p class="detail smooth_ease_trans lh-lg mb-0">Click-a-Pic of your gadgets/appliances and/or their invoice, warranty AMC document(s). You can even upload a PDF. Gizsafe will automatically identify them and populate all relevant data for effortless access.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Main Particle Section -->
+    <!-- <main id="particles-js" class="particle-section pt-md-5">
+      <section class="main-content pb-5 pt-md-5">
+        <div class="sec-spacer d-none d-md-block"></div>
+        <div class="container py-md-5">
+          <div class="row align-items-center justify-content-center smooth_ease_trans gy-5 gy-lg-0">
+            <div class="col-lg-6 smooth_ease_trans">
+              <div class="section-details text-center text-lg-start">
+                <h2 class="main-title fw-exbold text-capitalize text-dark">Category page and add gadget.</h2>
+                <p class="pt-3 pb-5 lh-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a class="btn btn-primary mx-auto ms-lg-0" href="#">Learn More</a>
+              </div>
+            </div>
+            <div class="col-lg-6 smooth_ease_trans">
+              <div class="main-image text-center">
+                <svg class="anim-shape top-right" xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 350 350">
+                  <rect id="light-square" width="350" height="350" rx="69" fill="#70c5eb"/>
+                </svg>
+                <img class="img-fluid smooth_ease_trans" src="images/index/home-category.png" alt="Gizsafe category page and add gadget">
+                <svg class="anim-shape bottom-left" xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 512 350">
+                  <path id="dark-triangle" d="M212.415,59.589a54,54,0,0,1,87.171,0l149.6,204.531C475.28,299.8,449.8,350,405.6,350H106.4c-44.2,0-69.68-50.2-43.585-85.88Z" fill="#274cb7"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sec-spacer"></div>
+      </section>
+      <section class="main-content light-bg py-5">
+        <div class="sec-spacer"></div>
+        <div class="container py-md-5">
+          <div class="row align-items-center justify-content-center smooth_ease_trans gy-5 gy-lg-0">
+            <div class="col-lg-6 order-last order-lg-first smooth_ease_trans">
+              <div class="main-image text-center">
+                <svg class="anim-shape top-left" xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 350 350">
+                  <rect id="light-square" width="350" height="350" rx="69" fill="#70c5eb"/>
+                </svg>
+                <img class="img-fluid smooth_ease_trans" src="images/how-it-works/picture-upload.png" alt="Gizsafe upload the picture Of your gadget">
+                <svg class="anim-shape bottom-right" xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 350 350">
+                  <rect id="dark-square" width="350" height="350" rx="128" fill="#274cb7"/>
+                </svg>
+              </div>
+            </div>
+            <div class="col-lg-6 order-first order-lg-last smooth_ease_trans">
+              <div class="section-details text-center text-lg-start">
+                <h2 class="main-title fw-exbold text-capitalize text-dark">Upload the picture Of your gadget.</h2>
+                <p class="pt-3 pb-5 lh-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a class="btn btn-primary mx-auto ms-lg-0" href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sec-spacer"></div>
+      </section>
+      <section class="main-content py-5">
+        <div class="sec-spacer"></div>
+        <div class="container py-md-5">
+          <div class="row align-items-center justify-content-center smooth_ease_trans gy-5 gy-lg-0">
+            <div class="col-lg-6 smooth_ease_trans">
+              <div class="section-details text-center text-lg-start">
+                <h2 class="main-title fw-exbold text-capitalize text-dark">Store all the documents Of the gadget.</h2>
+                <p class="pt-3 pb-5 lh-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a class="btn btn-primary mx-auto ms-lg-0" href="#">Learn More</a>
+              </div>
+            </div>
+            <div class="col-lg-6 smooth_ease_trans">
+              <div class="main-image text-center">
+                <svg class="anim-shape top-left" xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 350 350">
+                  <rect id="light-square" width="350" height="350" rx="69" fill="#70c5eb"/>
+                </svg>
+                <img class="img-fluid smooth_ease_trans" src="images/how-it-works/store-documents.png" alt="Gizsafe store all the documents Of the gadget">
+                <svg class="anim-shape bottom-right" xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 350 350">
+                  <rect id="dark-square" width="350" height="350" rx="128" fill="#274cb7"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sec-spacer"></div>
+      </section>
+      <section class="main-content light-bg py-5">
+        <div class="sec-spacer"></div>
+        <div class="container py-md-5">
+          <div class="row align-items-center justify-content-center smooth_ease_trans gy-5 gy-lg-0">
+            <div class="col-lg-6 order-last order-lg-first smooth_ease_trans">
+              <div class="main-image text-center">
+                <svg class="anim-shape top-right" xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 350 350">
+                  <rect id="light-square" width="350" height="350" rx="69" fill="#70c5eb"/>
+                </svg>
+                <img class="img-fluid smooth_ease_trans" src="images/index/information.png" alt="Gizsafe Home organization isn’t one size fits all">
+                <svg class="anim-shape bottom-left" xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 512 350">
+                  <path id="dark-triangle" d="M212.415,59.589a54,54,0,0,1,87.171,0l149.6,204.531C475.28,299.8,449.8,350,405.6,350H106.4c-44.2,0-69.68-50.2-43.585-85.88Z" fill="#274cb7"/>
+                </svg>
+              </div>
+            </div>
+            <div class="col-lg-6 order-first order-lg-last smooth_ease_trans">
+              <div class="section-details text-center text-lg-start">
+                <h2 class="main-title fw-exbold text-capitalize text-dark">All information of gadget in one place.</h2>
+                <p class="pt-3 pb-5 lh-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a class="btn btn-primary mx-auto ms-lg-0" href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sec-spacer"></div>
+      </section>
+    </main> -->
+    <!-- Main Particle Section -->
+    <main class="particle-section">
+      <section class="solution-hero smooth_ease_trans py-5">
+        <div class="container-fluid container-md smooth_ease_trans py-5">
+          <div class="row justify-content-center smooth_ease_trans">
+            <div class="col-lg-10 smooth_ease_trans">
+              <div class="hero-heading smooth_ease_trans text-center p-4 p-lg-5">
+                <h1 class="main-title smooth_ease_trans fw-bold text-primary mb-0">Manage your home appliances in 7 easy steps!</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="solution-block smooth_ease_trans pb-5 pt-lg-5">
+        <div class="container-fluid container-md steps-container smooth_ease_trans py-md-5">
+          <div class="steps-link-path smooth_ease_trans">
+            <div class="step-connector path_1 smooth_ease_trans"><span class="animated-path"></span></div>
+            <div class="step-connector path_2 smooth_ease_trans"><span class="animated-path"></span></div>
+            <div class="step-connector path_3 smooth_ease_trans"><span class="animated-path"></span></div>
+            <div class="step-connector path_4 smooth_ease_trans"><span class="animated-path"></span></div>
+            <div class="step-connector path_5 smooth_ease_trans"><span class="animated-path"></span></div>
+            <div class="step-connector path_6 smooth_ease_trans"><span class="animated-path"></span></div>
+          </div>
+          <div class="solution-steps step-1 mb-5 mb-md-0 smooth_ease_trans">
+            <div class="step-number smooth_ease_trans">
+              <svg class="step-icon smooth_ease_trans" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512">
+                <defs>
+                  <filter id="shadow_blur">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="20" />
+                  </filter>
+                </defs>
+                <path id="shadow" class="primary-fill opacity-50" filter="url(#shadow_blur)" d="M439.6,320.4c28.3,16.4,28.5,42.9,0.3,59.2l-132.2,76.8c-28.2,16.4-74,16.4-102.3,0L72.4,379.6C44,363.2,43.9,336.7,72,320.4l132.2-76.8c28.2-16.4,74-16.4,102.3,0L439.6,320.4z"/>
+                <g id="icon-base">
+                  <path class="primary-fill" d="M486.1,283.5L321,379.4c-35.2,20.5-92.4,20.5-127.8,0L27,283.5C9.2,273.3,0.3,259.7,0.4,246.2v19.1c0,13.4,8.8,27,26.6,37.3l166.2,95.9c35.4,20.5,92.6,20.5,127.8,0l165.1-95.9c17.5-10.1,26.2-23.4,26.2-36.8v-19.1C512.3,260.1,503.6,273.3,486.1,283.5z"/>
+                  <path class="base-fill" d="M485.7,209.4c35.4,20.5,35.6,53.6,0.4,74L321,379.3c-35.2,20.5-92.4,20.5-127.8,0L27,283.4c-35.4-20.5-35.6-53.6-0.4-74l165.1-95.9c35.2-20.5,92.4-20.5,127.8,0L485.7,209.4z"/>
+                </g>
+                <g id="download-icon">
+                  <path class="primary-fill" d="M311.6,246.4c1.5-0.8,3.5-1.4,5.7-1.4c4.4,0,8,2.1,8,4.6l-0.2,21.8c0,1.3-0.9,2.4-2.4,3.3c-1.5,0.8-3.5,1.4-5.7,1.4l-37.7,0c-4.4,0-8-2.1-8-4.6c0-1.3,0.9-2.4,2.4-3.3c1.5-0.8,3.5-1.4,5.7-1.4l18.4,0l-56.9-33.1c-3.1-1.8-3.1-4.7,0-6.6c3.1-1.8,8.2-1.8,11.3,0l56.9,33.1l0.1-10.7C309.2,248.4,310.1,247.2,311.6,246.4z"/>
+                  <path class="primary-fill" d="M326,189c2.8,0.9,5.4,2.1,7.9,3.5c4,2.3,7,4.9,8.9,7.7c1.9,2.7,2.6,5.6,2.4,8.4c-0.2,1.9-0.8,3.7-1.8,5.5c-1.3,2.4-3.2,4.6-5.5,6.8c-3.1,2.9-7,5.6-11.4,8.2L304,242c-3.1,1.8-8.2,1.8-11.3,0s-3.1-4.7,0-6.6l22.5-13c3.6-2.1,6.7-4.3,9-6.4c2.3-2.1,3.8-4.2,4.5-6.1c0.5-1.3,0.6-2.5,0.4-3.6c-0.3-1.5-1.1-3-2.8-4.6c-1-0.9-2.2-1.8-3.8-2.7c-2.6-1.5-5.1-2.4-7.7-2.9c-2.5-0.5-5.2-0.7-8-0.5c-1.9,0.1-3.9,0.3-5.9,0.7c-2.7,0.5-5.4,1.2-8.1,2.1c-3.6,1.2-7,2.7-9.9,4.2c-2.9,1.5-7.4,1.6-10.4,0.2c-6.2-2.9-12.7-5-19.1-6.3c-6.4-1.3-12.9-1.8-19.1-1.6c-12.5,0.3-24.3,3.4-33.8,8.8c-6.7,3.9-10.7,8.1-12.8,12.3c-2.1,4.2-2.2,8.5-1,12.5c0.8,2.6,2.3,5.1,4.2,7.2c1.5,1.7,1.1,3.6-1,5.1c-4.1,2.9-7.5,5.9-9.8,8.9c-2.3,3-3.6,6-3.7,8.7c-0.1,1.8,0.4,3.6,1.3,5.3c1.3,2.3,3.6,4.5,7.4,6.7c4.3,2.5,8.8,3.9,13.5,4.7c4.7,0.7,9.8,0.7,15.1,0c3.5-0.5,7.1-1.3,10.7-2.4c4.8-1.5,9.5-3.5,13.8-6l16.5-9.6c3.1-1.8,8.2-1.8,11.3,0c3.1,1.8,3.1,4.7,0,6.6l-16.5,9.6c-6.1,3.5-12.8,6.3-20,8.3c-7.2,2-14.7,3.2-22.4,3.3c-5.1,0.1-10.2-0.3-15.1-1.3c-6.6-1.3-12.8-3.5-18.2-6.6c-6-3.5-10-7.5-12-11.7c-1.9-4.2-1.8-8.5-0.2-12.6c1-2.7,2.7-5.4,4.9-8c2.2-2.6,4.9-5.1,7.9-7.5c-2.6-3.8-4.3-8-4.5-12.4c-0.4-5.5,1.4-11.4,6.1-17c3.1-3.7,7.5-7.4,13.2-10.7c9.1-5.3,20.2-8.9,32.2-10.5c12-1.7,24.8-1.3,37.3,1.1c6.4,1.3,12.7,3.1,18.7,5.5c2.3-1,4.7-2,7.3-2.8c4.6-1.5,9.6-2.8,15-3.6c3.6-0.5,7.3-0.7,11.2-0.6C316,186.5,321.2,187.3,326,189z"/>
+                </g>
+                <g id="icon-number">
+                  <path class="primary-fill" d="M69.6,49.5c3.3,5.8,4.9,14.2,4.9,25.2c0,10.9-1.6,21.2-4.8,30.8c-3.2,9.6-7.6,18-13.2,25.3c-5.6,7.3-12,13-19.2,17.1c-7.1,4.1-13.5,5.8-19.1,5c-5.6-0.8-10.1-4.1-13.3-10C1.7,137,0,128.6,0,117.7c0-10.9,1.6-21.2,4.8-30.8c3.2-9.6,7.6-18,13.2-25.3c5.6-7.3,12-13,19.1-17.1c7.2-4.2,13.6-5.8,19.2-5S66.3,43.6,69.6,49.5z M52.1,106c1.4-5.6,2.1-12.1,2.1-19.7c0-7.5-0.8-13.2-2.2-17.1c-1.5-3.9-3.5-6.2-6-7c-2.5-0.7-5.5-0.1-8.9,1.8c-3.3,1.9-6.2,4.7-8.7,8.3c-2.5,3.7-4.5,8.3-5.9,13.9c-1.4,5.6-2.1,12.1-2.1,19.7c0,7.5,0.8,13.2,2.2,17.1c1.5,3.9,3.5,6.2,6,7c2.5,0.7,5.4,0.1,8.8-1.8c3.4-2,6.3-4.8,8.9-8.4C48.7,116.2,50.7,111.6,52.1,106"/>
+                  <polygon class="primary-fill" points="117.2,0 117.5,99.9 97.3,111.5 97.1,30.2 79.7,40.2 79.7,21.6"/>
+                </g>
+              </svg>
+              <!-- <img class="img-fluid smooth_ease_trans" src="images/solutions/download.svg" alt="Download Gizsafe"> -->
+            </div>
+            <h2 class="step-title smooth_ease_trans fw-bold pb-2 mb-4">Download</h2>
+            <p class="step-details smooth_ease_trans">Once app is downloaded and installed, user clicks the app.</p>
+          </div>
+          <div class="solution-steps step-2 mb-5 mb-md-0 smooth_ease_trans">
+            <div class="step-number smooth_ease_trans">
+              <svg class="step-icon smooth_ease_trans" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512">
+                <path id="shadow" class="primary-fill opacity-50" filter="url(#shadow_blur)" d="M439.6,320.4c28.3,16.4,28.5,42.9,0.3,59.2l-132.2,76.8c-28.2,16.4-74,16.4-102.3,0L72.4,379.6C44,363.2,43.9,336.7,72,320.4l132.2-76.8c28.2-16.4,74-16.4,102.3,0L439.6,320.4z"/>
+                <g id="icon-base" transform="translate(68.272 0)">
+                  <path class="primary-fill" d="M417.4,283.4l-165.1,95.9c-35.2,20.4-92.3,20.4-127.8,0l-166.1-95.9c-17.8-10.3-26.7-23.8-26.7-37.3v19.1c0,13.5,8.8,27,26.7,37.3l166.1,95.9c35.4,20.4,92.6,20.4,127.8,0l165.1-95.9c17.4-10.2,26.2-23.5,26.2-36.8l0.1-19.1C443.6,260,434.8,273.3,417.4,283.4z"/>
+                  <path class="base-fill" d="M417,209.5c35.4,20.4,35.6,53.5,0.4,74l-165.1,95.9c-35.2,20.4-92.3,20.4-127.8,0l-166.1-95.9c-35.4-20.4-35.6-53.5-0.4-74L123,113.6c35.2-20.4,92.3-20.4,127.8,0L417,209.5z"/>
+                </g>
+                <g id="icon-number">
+                  <path class="primary-fill" d="M69.6,55.3c3.3,5.8,4.9,14.2,4.9,25.2c0,10.9-1.6,21.2-4.8,30.8c-3.2,9.6-7.6,18-13.2,25.3c-5.6,7.3-12,13-19.2,17.1c-7.1,4.1-13.5,5.8-19.1,5c-5.6-0.8-10.1-4.1-13.3-10C1.7,142.8,0,134.4,0,123.4c0-10.9,1.6-21.2,4.8-30.8c3.2-9.6,7.6-18,13.2-25.3c5.6-7.3,12-13,19.1-17.1c7.2-4.2,13.6-5.8,19.2-5S66.3,49.4,69.6,55.3zM52.1,111.8c1.4-5.6,2.1-12.1,2.1-19.7c0-7.5-0.8-13.2-2.2-17.1c-1.5-3.9-3.5-6.2-6-7c-2.5-0.7-5.5-0.1-8.9,1.8c-3.3,1.9-6.2,4.7-8.7,8.3c-2.5,3.7-4.5,8.3-5.9,13.9c-1.4,5.6-2.1,12.1-2.1,19.7c0,7.5,0.8,13.2,2.2,17.1c1.5,3.9,3.5,6.2,6,7c2.5,0.7,5.4,0.1,8.8-1.8c3.4-2,6.3-4.8,8.9-8.4C48.7,122,50.7,117.4,52.1,111.8"/>
+                  <path class="primary-fill" d="M113.4,6.2c6.5-3.7,12.1-5.8,17-6.1c4.8-0.4,8.6,0.9,11.3,3.7c2.7,2.8,4.1,7.3,4.1,13.4c0,3.2-0.3,6.7-1,10.2c-0.7,3.6-2.1,7.8-4.2,12.5c-2.1,4.7-5.2,10.5-9.2,17.2l-20,33.3l37.4-21.6l0.1,18.8l-65.7,37.9l0-15l33.4-55.7c2.6-4.3,4.6-7.9,5.8-10.8c1.2-2.9,2.1-5.4,2.5-7.5c0.4-2.1,0.7-3.9,0.7-5.4c0-4-1.2-6.4-3.6-7.2c-2.4-0.8-5.8,0.2-10.4,2.8c-3.6,2.1-7,4.9-10.1,8.3c-3.1,3.4-5.7,7.4-7.9,12.1L79,44.7c3.3-7.6,7.9-14.8,13.9-21.6C98.8,16.3,105.7,10.7,113.4,6.2z"/>
+                </g>
+                <g id="user-icon">
+                  <path class="primary-fill" d="M253.9,250.9c7.4,4.3,11.5,10,11.6,16.1c0,6-4.1,11.8-11.4,16.1l-11,6.4c-3.1,1.8-8.2,1.8-11.3,0c-3.1-1.8-3.2-4.7,0-6.6l11-6.4c4.3-2.5,6.8-5.9,6.8-9.5c0-3.6-2.5-7-6.9-9.5l-38.8-22.4c-4.4-2.5-10.3-3.9-16.5-3.9c-6.2,0-12.1,1.4-16.4,3.9l-11,6.4c-3.1,1.8-8.2,1.8-11.3,0c-3.1-1.8-3.2-4.7,0-6.6l11-6.4c7.3-4.3,17.3-6.7,27.7-6.7c10.4,0,20.4,2.4,27.8,6.7L253.9,250.9z"/>
+                  <path class="primary-fill" d="M234.4,221.8c-1.5-4.3-0.8-8.8,2.1-12.9c1.9-2.7,4.8-5.3,8.6-7.5c5.7-3.3,12.8-5.4,20.2-6.2c7.4-0.8,15.2-0.4,22.3,1.2c4.7,1.1,9.2,2.8,13,5c5.7,3.3,9.4,7.4,10.8,11.7c1.5,4.3,0.8,8.8-2.1,12.9c-1.9,2.7-4.8,5.3-8.6,7.5c-5.7,3.3-12.8,5.4-20.2,6.2c-7.4,0.8-15.2,0.4-22.3-1.2c-4.7-1.1-9.2-2.8-13-5C239.5,230.2,235.9,226.1,234.4,221.8zM264.1,204.9c-2.8,0.7-5.4,1.6-7.7,3c-3.4,2-5.5,4.4-6.3,6.9c-0.8,2.6-0.4,5.2,1.3,7.6c1.1,1.6,2.8,3.1,5.1,4.4c3.4,2,7.6,3.2,12,3.7c4.4,0.5,9,0.2,13.2-0.7c2.8-0.7,5.4-1.6,7.7-3c3.4-2,5.5-4.4,6.3-6.9c0.8-2.5,0.4-5.2-1.3-7.6c-1.1-1.6-2.8-3.1-5.1-4.5c-3.4-2-7.6-3.2-12-3.7C272.9,203.7,268.3,204,264.1,204.9"/>
+                  <path class="primary-fill" d="M360.6,271.4c-0.5,2.5-4.4,4.4-8.8,4.1l-64.3-4.2c-1.8-0.1-3.5-0.6-4.8-1.3c-0.3-0.2-0.5-0.3-0.7-0.5c-1.3-1-1.9-2.3-1.5-3.6l4.5-15.4c0.7-2.5,4.9-4.2,9.2-3.8c1.7,0.2,3.2,0.6,4.3,1.3c1.8,1,2.7,2.5,2.3,4.1l-3.1,10.6l55.9,3.7c1.9,0.1,3.5,0.6,4.8,1.3C360,268.6,360.9,269.9,360.6,271.4z"/>
+                </g>
+              </svg>
+              <!-- <img class="img-fluid smooth_ease_trans" src="images/solutions/signup.svg" alt="Signup Gizsafe"> -->
+            </div>
+            <h2 class="step-title smooth_ease_trans fw-bold pb-2 mb-4">Sign Up</h2>
+            <p class="step-details smooth_ease_trans">User signup or login into app</p>
+          </div>
+          <div class="solution-steps step-3 mb-5 mb-md-0 smooth_ease_trans">
+            <div class="step-number smooth_ease_trans">
+              <svg class="step-icon smooth_ease_trans" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512">
+                <path id="shadow" class="primary-fill opacity-50" filter="url(#shadow_blur)" d="M439.6,320.4c28.3,16.4,28.5,42.9,0.3,59.2l-132.2,76.8c-28.2,16.4-74,16.4-102.3,0L72.4,379.6C44,363.2,43.9,336.7,72,320.4l132.2-76.8c28.2-16.4,74-16.4,102.3,0L439.6,320.4z"/>
+                <g id="icon-base" transform="translate(68.631 0)">
+                  <path class="primary-fill" d="M417,283.5l-165,95.9c-35.2,20.5-92.3,20.5-127.7,0l-166.1-95.9c-17.8-10.3-26.7-23.7-26.7-37.2v19.1c0,13.5,8.9,26.9,26.7,37.2l166.1,95.9c35.4,20.5,92.5,20.5,127.7,0l165-95.9c17.5-10.2,26.2-23.4,26.3-36.8l0.1-19.1C443.2,260,434.5,273.4,417,283.5z"/>
+                  <path class="base-fill" d="M416.5,209.5c35.4,20.5,35.6,53.5,0.4,74l-165,95.9c-35.2,20.5-92.3,20.5-127.7,0l-166.1-95.9c-35.4-20.5-35.6-53.5-0.4-74l165-95.9c35.2-20.5,92.3-20.5,127.7,0L416.5,209.5z"/>
+                </g>
+                <g id="icon-number">
+                  <path class="primary-fill" d="M69.6,64.5c3.3,5.8,4.9,14.2,4.9,25.2c0,10.9-1.6,21.2-4.8,30.8c-3.2,9.6-7.6,18-13.2,25.3c-5.6,7.3-12,13-19.2,17.1c-7.1,4.1-13.5,5.8-19.1,5c-5.6-0.8-10.1-4.1-13.3-10C1.7,152,0,143.6,0,132.6c0-10.9,1.6-21.2,4.8-30.8c3.2-9.6,7.6-18,13.2-25.3c5.6-7.3,12-13,19.1-17.1c7.2-4.2,13.6-5.8,19.2-5S66.3,58.6,69.6,64.5z M52.1,121c1.4-5.6,2.1-12.1,2.1-19.7c0-7.5-0.8-13.2-2.2-17.1c-1.5-3.9-3.5-6.2-6-7c-2.5-0.7-5.5-0.1-8.9,1.8c-3.3,1.9-6.2,4.7-8.7,8.3c-2.5,3.7-4.5,8.3-5.9,13.9c-1.4,5.6-2.1,12.1-2.1,19.7c0,7.5,0.8,13.2,2.2,17.1c1.5,3.9,3.5,6.2,6,7c2.5,0.7,5.4,0.1,8.8-1.8c3.4-2,6.3-4.8,8.9-8.4C48.7,131.2,50.7,126.6,52.1,121"/>
+                  <path class="primary-fill" d="M143.1,0l0,15l-19.5,36.8c6.4-2.5,11.5-3,15.3-1.3c5.5,2.4,8.2,7.9,8.3,16.5c0,5.6-1.3,11.6-3.8,18c-2.6,6.4-6.5,12.6-11.8,18.7c-5.3,6.1-12.1,11.5-20.3,16.3c-6,3.5-12,6-18,7.6c-6,1.6-11,1.9-15.2,0.8l7.8-22.2c3.3,0.8,7.2,0.8,11.6-0.1c4.4-0.9,8.8-2.7,13.3-5.2c5.1-2.9,9-6.4,11.9-10.3c2.9-4,4.3-7.9,4.3-11.9c0-3.8-1.3-6.1-3.9-6.8c-2.6-0.7-6.7,0.6-12.4,3.9l-9.2,5.3l0-15.3l17.8-33.6l-37,21.3l-0.1-18.5L143.1,0z"/>
+                </g>
+                <path id="category-icon" class="primary-fill" d="M324.9,216.3c10.4-3.2,23.7-2.3,32.5,2.8c10.7,6.2,10.7,16.4-0.1,22.6c-10.8,6.2-28.3,6.2-39,0c-8.7-5.1-10.3-12.8-4.7-18.8l-11.6-6.8l-38.6,22.3l11.6,6.8c10.4-3.2,23.7-2.3,32.5,2.8c10.7,6.2,10.7,16.4-0.1,22.6c-10.8,6.2-28.3,6.2-39,0c-8.7-5.1-10.3-12.8-4.7-18.8l-11.6-6.8l-38.6,22.3L225,274c10.4-3.2,23.7-2.3,32.5,2.8c10.7,6.2,10.7,16.4-0.1,22.6c-10.8,6.2-28.3,6.2-39,0c-8.7-5.1-10.3-12.8-4.7-18.8l-11.7-6.8c-6.2-3.6-6.1-9.4,0.1-13l38.7-22.4l-10.8-6.3l-5.4,3.1c-4.7,2.7-12.2,2.7-16.9,0l-22.1-12.8c-4.6-2.7-4.6-7.1,0.1-9.8l22.2-12.8c4.7-2.7,12.2-2.7,16.9,0l22.1,12.8c4.6,2.7,4.6,7.1-0.1,9.8l-5.4,3.1l10.8,6.3l38.7-22.4c6.2-3.6,16.2-3.6,22.4,0L324.9,216.3z M246.1,283.3c-4.5-2.6-11.8-2.6-16.4,0c-4.5,2.6-4.5,6.9-0.1,9.5c4.5,2.6,11.8,2.6,16.4,0C250.6,290.2,250.6,285.9,246.1,283.3 M346,235.1c4.5-2.6,4.6-6.9,0.1-9.5c-4.5-2.6-11.8-2.6-16.4,0c-4.5,2.6-4.5,6.9-0.1,9.5C334.1,237.7,341.5,237.7,346,235.1 M296.1,254.5c-4.5-2.6-11.8-2.6-16.4,0c-4.5,2.6-4.5,6.9-0.1,9.5c4.5,2.6,11.8,2.6,16.4,0C300.6,261.3,300.6,257.1,296.1,254.5 M216.1,227l16.4-9.5l-16.3-9.5l-16.4,9.5L216.1,227"/>
+              </svg>
+              <!-- <img class="img-fluid smooth_ease_trans" src="images/solutions/categories.svg" alt="Categories Gizsafe"> -->
+            </div>
+            <h2 class="step-title smooth_ease_trans fw-bold pb-2 mb-4">Categories</h2>
+            <p class="step-details smooth_ease_trans">User select category of appliances.</p>
+          </div>
+          <div class="solution-steps step-4 mb-5 mb-md-0 smooth_ease_trans">
+            <div class="step-number smooth_ease_trans">
+              <svg class="step-icon smooth_ease_trans" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512">
+                <path id="shadow" class="primary-fill opacity-50" filter="url(#shadow_blur)" d="M439.6,320.4c28.3,16.4,28.5,42.9,0.3,59.2l-132.2,76.8c-28.2,16.4-74,16.4-102.3,0L72.4,379.6C44,363.2,43.9,336.7,72,320.4l132.2-76.8c28.2-16.4,74-16.4,102.3,0L439.6,320.4z"/>
+                <g id="icon-base">
+                  <path class="primary-fill" d="M485.8,283.5l-165.1,95.9c-35.2,20.4-92.4,20.4-127.8,0L26.8,283.5C8.9,273.2,0.1,259.7,0.1,246.2L0,265.3c0,13.5,8.8,27,26.7,37.3l166.1,95.9c35.4,20.4,92.6,20.4,127.8,0l165.1-95.9c17.4-10.2,26.2-23.5,26.2-36.8v-19.1C512,260,503.2,273.3,485.8,283.5z"/>
+                  <path class="base-fill" d="M485.3,209.4c35.4,20.4,35.6,53.5,0.4,74l-165.1,95.9c-35.2,20.4-92.4,20.4-127.8,0L26.8,283.5c-35.4-20.4-35.6-53.5-0.4-74l165.1-95.9c35.2-20.4,92.4-20.4,127.8,0L485.3,209.4z"/>
+                </g>
+                <g id="icon-number">
+                  <path class="primary-fill" d="M69.6,65.7c3.3,5.8,4.9,14.2,4.9,25.2c0,10.9-1.6,21.2-4.8,30.8c-3.2,9.6-7.6,18-13.2,25.3c-5.6,7.3-12,13-19.2,17.1c-7.1,4.1-13.5,5.8-19.1,5c-5.6-0.8-10.1-4.1-13.3-10C1.7,153.2,0,144.8,0,133.9c0-10.9,1.6-21.2,4.8-30.8c3.2-9.6,7.6-18,13.2-25.3c5.6-7.3,12-13,19.1-17.1c7.2-4.2,13.6-5.8,19.2-5S66.3,59.8,69.6,65.7zM52.1,122.2c1.4-5.6,2.1-12.1,2.1-19.7c0-7.5-0.8-13.2-2.2-17.1c-1.5-3.9-3.5-6.2-6-7c-2.5-0.7-5.5-0.1-8.9,1.8c-3.3,1.9-6.2,4.7-8.7,8.3c-2.5,3.7-4.5,8.3-5.9,13.9c-1.4,5.6-2.1,12.1-2.1,19.7c0,7.5,0.8,13.2,2.2,17.1c1.5,3.9,3.5,6.2,6,7c2.5,0.7,5.4,0.1,8.8-1.8c3.4-2,6.3-4.8,8.9-8.4C48.7,132.4,50.7,127.8,52.1,122.2"/>
+                  <polygon class="primary-fill" points="145.2,0 107.4,82 130.8,68.5 130.7,49.8 149.7,38.9 149.7,57.5 163.9,49.4 164,68.2 149.8,76.4 149.9,97.3 130.2,108.7 130.2,87.7 83.4,114.7 83.3,99.2 124.1,12.2 	"/>
+                </g>
+                <g id="upload-icon">
+                  <path class="primary-fill" d="M250.3,210c-1.5-0.8-2.4-2-2.4-3.3c0-2.6,3.6-4.6,8-4.6l58.8,0c0.4,0,0.8,0,1.1,0c1.4,0.2,1.5,0.2,1.6,0.2c2.1,0.6,2.6,0.9,3,1.1c1.5,0.8,2.4,2,2.4,3.3l0.2,34.1c0,2.6-3.6,4.6-8,4.6c-2.2,0-4.2-0.5-5.7-1.4c-1.5-0.8-2.4-2-2.4-3.3l-0.1-22.9l-56.9,33c-3.1,1.8-8.2,1.8-11.3,0c-3.1-1.8-3.2-4.7,0-6.6l56.9-33l-39.6,0C253.8,211.4,251.8,210.8,250.3,210z"/>
+                  <path class="primary-fill" d="M303.2,275.1c3.1,1.8,3.2,4.7,0,6.6l-23.5,13.7c-4.6,2.7-10.9,4.2-17.4,4.2c-6.5,0-12.8-1.5-17.5-4.2l-82.8-47.8c-4.6-2.7-7.3-6.3-7.3-10.1c0-3.8,2.6-7.4,7.2-10.1l23.5-13.7c3.1-1.8,8.2-1.8,11.3,0s3.2,4.7,0,6.6l-23.5,13.7c-1.6,0.9-2.5,2.2-2.5,3.5c0,1.3,0.9,2.6,2.6,3.5l82.8,47.8c1.6,0.9,3.8,1.5,6.1,1.5c2.3,0,4.5-0.5,6.1-1.5l23.5-13.7C295,273.3,300.1,273.3,303.2,275.1z"/>
+                </g>
+              </svg>
+              <!-- <img class="img-fluid smooth_ease_trans" src="images/solutions/upload.svg" alt="Upload Gizsafe"> -->
+            </div>
+            <h2 class="step-title smooth_ease_trans fw-bold pb-2 mb-4">Upload</h2>
+            <p class="step-details smooth_ease_trans">User upload appliance pic, warranty and invoice documents.</p>
+          </div>
+          <div class="solution-steps step-5 mb-5 mb-md-0 smooth_ease_trans">
+            <div class="step-number smooth_ease_trans">
+              <svg class="step-icon smooth_ease_trans" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512">
+                <path id="shadow" class="primary-fill opacity-50" filter="url(#shadow_blur)" d="M439.4,320.4c28.3,16.4,28.5,42.9,0.3,59.2l-132.2,76.8c-28.2,16.4-74,16.4-102.3,0L72.1,379.6c-28.3-16.4-28.5-42.9-0.3-59.2L204,243.6c28.2-16.4,74-16.4,102.3,0L439.4,320.4z"/>
+                <g id="icon-base" transform="translate(68.176 0)">
+                  <path class="primary-fill" d="M417.6,283.5l-165,95.9c-35.2,20.4-92.4,20.4-127.8,0l-166.2-95.9c-17.8-10.3-26.7-23.8-26.7-37.3l-0.1,19.1c0,13.5,8.8,27,26.7,37.3l166.2,95.9c35.4,20.4,92.6,20.4,127.8,0l165.1-95.9c17.4-10.2,26.2-23.5,26.2-36.7v-19.1C443.8,260,435.1,273.3,417.6,283.5z"/>
+                  <path class="base-fill" d="M417.2,209.4c35.4,20.4,35.6,53.5,0.4,74l-165,95.9c-35.2,20.4-92.4,20.4-127.8,0l-166.2-95.9c-35.4-20.4-35.6-53.6-0.4-74l165-95.9c35.2-20.4,92.4-20.4,127.8,0L417.2,209.4z"/>
+                </g>
+                <g id="document-icon">
+                  <path class="primary-fill" d="M234.4,264.8c-3.1-1.8-3.1-4.7,0-6.6l42.6-24.6c3.1-1.8,8.2-1.8,11.3,0c3.1,1.8,3.1,4.7,0,6.6l-42.6,24.6C242.6,266.6,237.5,266.6,234.4,264.8z"/>
+                  <path class="primary-fill" d="M277.4,204.7c2.1,0,4.2,0.4,5.8,1.4l63.4,36.9c4.3,2.5,6.7,5.9,6.7,9.4c0,3.5-2.5,6.9-6.8,9.4l-63.8,36.9c-4.3,2.5-10.2,3.9-16.3,3.9c-6.1,0-11.9-1.4-16.2-3.9l-84.6-49.2c-4.3-2.5-6.7-5.9-6.7-9.4c0-3.5,2.5-6.9,6.8-9.4l42.6-24.6c1.6-0.9,3.7-1.4,5.8-1.4L277.4,204.7z M335.2,249.5l-57.8-33.6L251.2,231c-1.5,0.9-3.6,1.4-5.7,1.4c-2.1,0-4.2-0.5-5.6-1.4l-26.1-15.2l-36.9,21.3c-1.3,0.8-2.1,1.8-2.1,2.9c0,1.1,0.7,2.1,2,2.9l84.6,49.2c1.3,0.8,3.1,1.2,4.9,1.2c1.9,0,3.6-0.4,5-1.2l63.8-36.9c1.3-0.8,2.1-1.8,2.1-2.9C337.3,251.2,336.5,250.2,335.2,249.5 M233.1,213.9l12.5,7.2l12.5-7.2L233.1,213.9"/>
+                  <path class="primary-fill" d="M224.6,252.5c-3.1,1.8-8.2,1.8-11.3,0c-3.1-1.8-3.1-4.7,0-6.6l5.3-3.1l5.3-3.1c3.1-1.8,8.2-1.8,11.3,0c3.1,1.8,3.1,4.7,0,6.6l-5.3,3.1L224.6,252.5z"/>
+                  <path class="primary-fill" d="M298.1,246c3.1-1.8,8.2-1.8,11.3,0c3.1,1.8,3.1,4.7,0,6.6l-42.6,24.6c-3.1,1.8-8.2,1.8-11.3,0c-3.1-1.8-3.1-4.7,0-6.6L298.1,246z"/>
+                </g>
+                <g id="icon-number">
+                  <path class="primary-fill" d="M69.6,65.3c3.3,5.8,4.9,14.2,4.9,25.2c0,10.9-1.6,21.2-4.8,30.8c-3.2,9.6-7.6,18-13.2,25.3c-5.6,7.3-12,13-19.2,17.1c-7.1,4.1-13.5,5.8-19.1,5c-5.6-0.8-10.1-4.1-13.3-10C1.7,152.8,0,144.4,0,133.4c0-10.9,1.6-21.2,4.8-30.8c3.2-9.6,7.6-18,13.2-25.3c5.6-7.3,12-13,19.1-17.1c7.2-4.2,13.6-5.8,19.2-5S66.3,59.4,69.6,65.3zM52.1,121.8c1.4-5.6,2.1-12.1,2.1-19.7c0-7.5-0.8-13.2-2.2-17.1c-1.5-3.9-3.5-6.2-6-7c-2.5-0.7-5.5-0.1-8.9,1.8c-3.3,1.9-6.2,4.7-8.7,8.3c-2.5,3.7-4.5,8.3-5.9,13.9c-1.4,5.6-2.1,12.1-2.1,19.7c0,7.5,0.8,13.2,2.2,17.1c1.5,3.9,3.5,6.2,6,7c2.5,0.7,5.4,0.1,8.8-1.8c3.4-2,6.3-4.8,8.9-8.4C48.7,132,50.7,127.4,52.1,121.8"/>
+                  <path class="primary-fill" d="M146.4,51.6c2.4,3.3,3.6,7.9,3.6,13.8c0,5.9-1.3,12.1-3.8,18.6c-2.6,6.5-6.5,12.8-11.8,19c-5.3,6.2-12.1,11.7-20.4,16.4c-6,3.5-12,6-17.9,7.6c-5.9,1.6-11,1.8-15.2,0.9l7.9-22.3c3.3,0.8,7.2,0.8,11.5-0.1c4.3-0.9,8.8-2.6,13.2-5.2c5-2.9,9-6.3,11.9-10.3c2.9-4,4.3-8,4.3-12.1c0-2.6-0.6-4.5-1.8-5.8c-1.2-1.3-3.2-1.7-6.2-1c-2.9,0.6-7.1,2.5-12.4,5.6L87.2,89.4l4.3-58.8l53-30.6l0.1,18.5l-36.2,20.9l-1.4,19.8l7.1-4.1c8.6-5,15.5-7.6,20.8-7.9C140.1,46.9,144,48.4,146.4,51.6z"/>
+                </g>
+              </svg>
+              <!-- <img class="img-fluid smooth_ease_trans" src="images/solutions/create-card.svg" alt="Create Card Gizsafe"> -->
+            </div>
+            <h2 class="step-title smooth_ease_trans fw-bold pb-2 mb-4">Create Card</h2>
+            <p class="step-details smooth_ease_trans">Now your particular appliance card will be created.</p>
+          </div>
+          <div class="solution-steps step-6 mb-5 mb-md-0 smooth_ease_trans">
+            <div class="step-number smooth_ease_trans">
+              <svg class="step-icon smooth_ease_trans" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512">
+                <path id="shadow" class="primary-fill opacity-50" filter="url(#shadow_blur)" d="M439.6,320.4c28.3,16.4,28.5,42.9,0.3,59.2l-132.2,76.8c-28.2,16.4-74,16.4-102.3,0L72.4,379.6C44,363.2,43.9,336.7,72,320.4l132.2-76.8c28.2-16.4,74-16.4,102.3,0L439.6,320.4z"/>
+                <g id="icon-base">
+                  <path class="primary-fill" d="M486,283.4l-165,95.8c-35.2,20.4-92.3,20.4-127.7,0L27.2,283.4C9.4,273.1,0.5,259.6,0.5,246.1l-0.1,19.1c0,13.5,8.9,27,26.7,37.3l166.2,95.9c35.4,20.4,92.5,20.4,127.7,0l165-95.9c17.5-10.2,26.2-23.4,26.3-36.7l0.1-19.1C512.2,260,503.5,273.3,486,283.4z"/>
+                  <path class="base-fill" d="M485.6,209.4c35.4,20.4,35.6,53.6,0.4,74l-165,95.8c-35.2,20.4-92.3,20.4-127.7,0L27.2,283.4c-35.4-20.4-35.6-53.6-0.4-74l165.1-95.8c35.2-20.4,92.3-20.4,127.7,0L485.6,209.4z"/>
+                </g>
+                <g id="icon-number">
+                  <path class="primary-fill" d="M69.6,65.1c3.3,5.8,4.9,14.2,4.9,25.2c0,10.9-1.6,21.2-4.8,30.8c-3.2,9.6-7.6,18-13.2,25.3c-5.6,7.3-12,13-19.2,17.1c-7.1,4.1-13.5,5.8-19.1,5c-5.6-0.8-10.1-4.1-13.3-10C1.7,152.6,0,144.2,0,133.2c0-10.9,1.6-21.2,4.8-30.8c3.2-9.6,7.6-18,13.2-25.3c5.6-7.3,12-13,19.1-17.1c7.2-4.2,13.6-5.8,19.2-5S66.3,59.2,69.6,65.1zM52.1,121.6c1.4-5.6,2.1-12.1,2.1-19.7c0-7.5-0.8-13.2-2.2-17.1c-1.5-3.9-3.5-6.2-6-7c-2.5-0.7-5.5-0.1-8.9,1.8c-3.3,1.9-6.2,4.7-8.7,8.3c-2.5,3.7-4.5,8.3-5.9,13.9c-1.4,5.6-2.1,12.1-2.1,19.7c0,7.5,0.8,13.2,2.2,17.1c1.5,3.9,3.5,6.2,6,7c2.5,0.7,5.4,0.1,8.8-1.8c3.4-2,6.3-4.8,8.9-8.4C48.7,131.8,50.7,127.2,52.1,121.6"/>
+                  <path class="primary-fill" d="M152,47.5c2.7,3.1,4.1,7.8,4.1,14.1c0,6.8-1.4,13.5-4.4,20.2c-2.9,6.7-6.8,12.8-11.8,18.4c-4.9,5.5-10.5,10.1-16.7,13.7c-7.9,4.6-14.8,6.7-20.7,6.2c-5.8-0.4-10.4-3.4-13.5-8.9c-3.2-5.5-4.8-13.6-4.8-24.4c0-11.5,1.8-22.3,5.6-32.5c3.7-10.2,8.9-19.3,15.6-27.3c6.7-8,14.3-14.6,23-19.6c4.6-2.7,9.1-4.7,13.3-6c4.2-1.3,7.9-1.7,10.9-1.2l-7.4,21.3c-2.4-0.5-5-0.3-7.7,0.5c-2.7,0.9-5.6,2.2-8.6,3.9c-7.5,4.3-13.5,10.4-17.9,18.2c-4.1,7.2-6.2,15.6-6.5,25c0.4-0.7,0.8-1.4,1.2-2c2.5-4,5.4-7.6,8.9-10.8c3.4-3.3,7.2-6.1,11.4-8.5c5.6-3.3,10.7-4.9,15.2-4.9C145.7,42.8,149.3,44.4,152,47.5z M134.8,82.9c1.2-3,1.9-6,1.8-8.9c0-4.6-1.4-7.4-4.1-8.6c-2.7-1.2-6.3-0.5-10.8,2.1c-3,1.7-5.6,3.9-7.8,6.4c-2.2,2.6-4,5.4-5.3,8.3c-1.3,3-1.9,5.9-1.9,8.9c0,2.9,0.6,5,1.9,6.6c1.2,1.5,3,2.3,5.2,2.3c2.2,0,5-0.9,8.2-2.8c2.8-1.6,5.3-3.7,7.5-6.1C131.8,88.6,133.5,85.9,134.8,82.9"/>
+                </g>
+                <g id="clipboard-icon">
+                  <path class="primary-fill" d="M227.6,245.5c3.1,1.8,3.2,4.7,0,6.6c-3.1,1.8-8.2,1.8-11.3,0l-10.9-6.3c-3.1-1.8-3.2-4.7,0-6.6c3.1-1.8,8.2-1.8,11.3,0L227.6,245.5z"/>
+                  <path class="primary-fill" d="M303.7,232.9c3.1,1.8,3.2,4.7,0,6.6s-8.2,1.8-11.3,0l-38.2-22.1c-3.1-1.8-3.2-4.7,0-6.6c3.1-1.8,8.2-1.8,11.3,0L303.7,232.9z"/>
+                  <path class="primary-fill" d="M282,239.2c3.1,1.8,3.2,4.7,0,6.6c-3.1,1.8-8.2,1.8-11.3,0L238,226.9c-3.1-1.8-3.2-4.7,0-6.6c3.1-1.8,8.2-1.8,11.3,0L282,239.2z"/>
+                  <path class="primary-fill" d="M260.3,245.5c3.1,1.8,3.2,4.7,0,6.6c-3.1,1.8-8.2,1.8-11.3,0l-27.3-15.8c-3.1-1.8-3.2-4.7,0-6.6c3.1-1.8,8.2-1.8,11.3,0L260.3,245.5z"/>
+                  <path class="primary-fill" d="M343.5,237c-1.1,1.6-2.9,3.2-5.1,4.5l-75.9,44.1c-3.4,2-7.6,3.2-12.1,3.7s-9,0.2-13.3-0.7c-2.8-0.7-5.5-1.7-7.8-3l-54.6-31.5c-3.4-2-5.6-4.4-6.5-7c-0.9-2.6-0.5-5.2,1.2-7.7c1.1-1.6,2.8-3.2,5.1-4.5l75.9-44.1c3.4-2,7.6-3.2,12.1-3.7c4.4-0.5,9-0.2,13.3,0.7c2.8,0.7,5.5,1.7,7.8,3l5.2,3c1.7-0.9,3.8-1.5,5.9-1.8c2.2-0.3,4.6-0.1,6.7,0.4c1.4,0.3,2.8,0.8,3.9,1.5l27.3,15.8c1.7,1,2.8,2.3,3.3,3.5c0.4,1.3,0.2,2.6-0.6,3.9c-0.5,0.8-1.3,1.5-2.4,2.1l5.2,3c3.4,2,5.6,4.4,6.5,7C345.6,231.9,345.2,234.5,343.5,237z M251.1,279l75.9-44.1c1.1-0.6,1.7-1.4,2-2.2c0.3-0.8,0.1-1.7-0.4-2.4c-0.4-0.5-0.9-1-1.6-1.4l-5.2-3c-1.7,0.9-3.7,1.5-5.9,1.8c-2.2,0.3-4.6,0.1-6.7-0.4c-1.4-0.3-2.8-0.8-3.9-1.5L277.9,210c-1.7-1-2.8-2.3-3.3-3.5c-0.4-1.3-0.2-2.6,0.6-3.9c0.5-0.8,1.3-1.5,2.4-2.1l-5.2-3c-1.1-0.6-2.4-1-3.8-1.2c-1.4-0.2-2.9-0.1-4.2,0.2c-0.9,0.2-1.7,0.5-2.4,0.9l-75.9,44.1c-1.1,0.6-1.7,1.4-2,2.2c-0.3,0.8-0.1,1.7,0.4,2.4c0.4,0.5,0.9,1,1.6,1.4l54.6,31.5c1.1,0.6,2.4,1,3.8,1.2c1.4,0.2,2.9,0.1,4.2-0.2C249.6,279.7,250.4,279.4,251.1,279M297.1,202.2l-5,2.9l21.4,12.4l5-2.9L297.1,202.2"/>
+                </g>
+              </svg>
+              <!-- <img class="img-fluid smooth_ease_trans" src="images/solutions/service-request.svg" alt="Service Request Gizsafe"> -->
+            </div>
+            <h2 class="step-title smooth_ease_trans fw-bold pb-2 mb-4">Service Request</h2>
+            <p class="step-details smooth_ease_trans">User clicks on service request and service request gets created.</p>
+          </div>
+          <div class="solution-steps step-7 mb-0 smooth_ease_trans">
+            <div class="step-number smooth_ease_trans">
+              <svg class="step-icon smooth_ease_trans" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512">
+                <path id="shadow" class="primary-fill opacity-50" filter="url(#shadow_blur)" d="M439.6,320.4c28.3,16.4,28.5,42.9,0.3,59.2l-132.2,76.8c-28.2,16.4-74,16.4-102.3,0L72.4,379.6C44,363.2,43.9,336.7,72,320.4l132.2-76.8c28.2-16.4,74-16.4,102.3,0L439.6,320.4z"/>
+                <g id="icon-base">
+                  <path class="primary-fill" d="M485.7,283.5l-165.1,95.9c-35.1,20.4-92.3,20.4-127.8,0l-166-95.9C9,273.2,0.1,259.6,0.1,246.2L0,265.3c0,13.5,8.9,26.9,26.7,37.3l166.1,95.9c35.4,20.4,92.6,20.4,127.8,0l165.1-96c17.4-10.1,26.2-23.4,26.3-36.8v-19.1C511.9,260,503.2,273.3,485.7,283.5z"/>
+                  <path class="base-fill" d="M485.3,209.4c35.4,20.4,35.6,53.5,0.4,74l-165.1,95.9c-35.1,20.4-92.3,20.4-127.8,0L26.8,283.5c-35.4-20.4-35.6-53.5-0.4-74l165.1-95.9c35.1-20.4,92.3-20.4,127.8,0L485.3,209.4z"/>
+                </g>
+                <g id="check-icon">
+                  <path class="primary-fill" d="M264.8,185.4c4.4,0,8,2.1,8,4.6l-0.4,64.7c0,1.2-0.9,2.4-2.4,3.3c-1.5,0.9-3.6,1.4-5.7,1.4l-33.5,0c-4.4,0-8-2.1-8-4.6c0-1.3,0.9-2.4,2.4-3.3c1.5-0.8,3.5-1.4,5.7-1.4l25.5,0l0.3-60c0-1.3,0.9-2.4,2.4-3.3C260.6,185.9,262.6,185.4,264.8,185.4z"/>
+                  <path class="primary-fill" d="M298.1,215.8c3.1-1.8,8.2-1.8,11.3,0l38.9,22.6c4.4,2.6,6.9,6.1,6.9,9.7c0,3.7-2.5,7.2-7,9.7l-78.4,45.3c-4.5,2.6-10.5,4-16.8,4c-6.3,0-12.4-1.5-16.8-4L158.3,258c-4.4-2.6-6.9-6.1-6.9-9.7c0-3.7,2.5-7.2,7-9.7l61.6-35.6c3.1-1.8,8.2-1.8,11.3,0c3.1,1.8,3.1,4.7,0,6.6L169.6,245c-1.5,0.8-2.3,2-2.3,3.2c0,1.2,0.8,2.3,2.3,3.2l77.9,45.3c1.5,0.8,3.4,1.3,5.5,1.3c2.1,0,4-0.5,5.5-1.3l78.4-45.3c1.5-0.8,2.3-2,2.3-3.2c0-1.2-0.8-2.3-2.3-3.2L298,222.4C294.9,220.6,294.9,217.6,298.1,215.8z"/>
+                </g>
+                <g id="icon-number">
+                  <path class="primary-fill" d="M69.6,69.4c3.3,5.8,4.9,14.2,4.9,25.2c0,10.9-1.6,21.2-4.8,30.8c-3.2,9.6-7.6,18-13.2,25.3c-5.6,7.3-12,13-19.2,17.1c-7.1,4.1-13.5,5.8-19.1,5c-5.6-0.8-10.1-4.1-13.3-10C1.7,156.9,0,148.5,0,137.6c0-10.9,1.6-21.2,4.8-30.8c3.2-9.6,7.6-18,13.2-25.3c5.6-7.3,12-13,19.1-17.1c7.2-4.2,13.6-5.8,19.2-5S66.3,63.6,69.6,69.4zM52.1,125.9c1.4-5.6,2.1-12.1,2.1-19.7c0-7.5-0.8-13.2-2.2-17.1c-1.5-3.9-3.5-6.2-6-7c-2.5-0.7-5.5-0.1-8.9,1.8c-3.3,1.9-6.2,4.7-8.7,8.3c-2.5,3.7-4.5,8.3-5.9,13.9c-1.4,5.6-2.1,12.1-2.1,19.7c0,7.5,0.8,13.2,2.2,17.1c1.5,3.9,3.5,6.2,6,7c2.5,0.7,5.4,0.1,8.8-1.8c3.4-2,6.3-4.8,8.9-8.4C48.7,136.1,50.7,131.5,52.1,125.9"/>
+                  <polygon class="primary-fill" points="151.7,0 151.7,15 119.7,118.5 97.8,131.1 128.8,32.1 100,48.7 100,65 82.1,75.3 82,40.2"/>
+                </g>
+              </svg>
+              <!-- <img class="img-fluid smooth_ease_trans" src="images/solutions/register-gadget.svg" alt="Register Gadget Gizsafe"> -->
+            </div>
+            <h2 class="step-title smooth_ease_trans fw-bold pb-2 mb-4">Register Gadget</h2>
+            <p class="step-details smooth_ease_trans">User clicks on asset registration and his asset is registered with a brand.</p>
+          </div>
+        </div>
+        <div class="sec-spacer"></div>
+      </section>
+    </main>
+    <!-- Download App Section -->
+    <section id="download" class="download-app py-5 bg-primary">
+      <div class="container py-md-5 py-lg-4 smooth_ease_trans">
+        <div class="row align-items-center smooth_ease_trans">
+          <div class="col-lg-6 order-last order-lg-first smooth_ease_trans">
+            <div class="download-app-image text-center">
+              <img class="img-fluid smooth_cubic_trans" src="images/common/download-app-3d-image-resized.png" alt="Gizsafe 3D representation">
+            </div>
+          </div>
+          <div class="col-lg-6 order-first order-lg-last smooth_ease_trans">
+            <div class="download-app-cont smooth_ease_trans text-center text-lg-start text-white">
+              <h2 class="main-title fw-bold smooth_ease_trans pb-4">Download our app from the store</h2>
+              <p class="detail smooth_ease_trans lh-lg">In consequant, quam id sodales hendrerit, eros mi molestie leo an lacinia risus neque tristique augue. Proin tempus urna vel congue elementum. Vestibulum euismod accumsan.</p>
+              <div class="btn-group download-app-btns py-5 px-md-5 px-lg-0">
+                <a href="#" class="download-app-btn smooth_cubic_trans">
+                  <img class="img-fluid smooth_cubic_trans" src="images/common/app-store.svg" alt="Download on the App Store">
+                </a>
+                <a href="#" class="download-app-btn smooth_cubic_trans">
+                  <img class="img-fluid smooth_cubic_trans" src="images/common/google-play.svg" alt="Available on the Google Play">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-divider reverse">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path fill="#ffffff" fill-opacity="1" d="M0,224L48,197.3C96,171,192,117,288,90.7C384,64,480,64,576,101.3C672,139,768,213,864,224C960,235,1056,181,1152,170.7C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+    </section>
+    <div class="sec-spacer"></div>
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container smooth_ease_trans">
+        <div class="row justify-content-between smooth_ease_trans">
+          <div class="col-lg-4 col-xxl-3 smooth_ease_trans">
+            <div class="footer-about text-center text-lg-start">
+              <a class="footer-logo smooth_cubic_trans" href="index.html">
+                <img class="img-fluid smooth_cubic_trans" src="images/common/footer-logo.svg" alt="Gizsafe Logo">
+              </a>
+              <p class="content smooth_ease_trans lh-lg mb-0 py-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+              <div class="btn-group download-app-btns">
+                <a href="#" class="download-app-btn smooth_cubic_trans">
+                  <img class="img-fluid smooth_cubic_trans" src="images/common/app-store.svg" alt="Download on the App Store">
+                </a>
+                <a href="#" class="download-app-btn smooth_cubic_trans">
+                  <img class="img-fluid smooth_cubic_trans" src="images/common/google-play.svg" alt="Available on the Google Play">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 smooth_ease_trans">
+            <div class="site-links pt-5 pt-lg-3">
+              <h4 class="link-head">Knowledge Base</h4>
+              <ul class="list-unstyled mb-0">
+                <li><a class="link-items smooth_cubic_trans" href="#">Home Maintenance</a></li>
+                <li><a class="link-items smooth_cubic_trans" href="#">Featured Article</a></li>
+              </ul>
+            </div>
+            <div class="site-links pt-5">
+              <h4 class="link-head">Contact Us</h4>
+              <ul class="list-unstyled mb-0">
+                <li><a class="link-items smooth_cubic_trans" href="mailto:gizsafe@gmail.com">gizsafe@gmail.com</a></li>
+                <li><a class="link-items smooth_cubic_trans" href="tel: +91 8973728787">+91 - 8973728787</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 smooth_ease_trans">
+            <div class="site-links pt-5 pt-lg-3">
+              <h4 class="link-head">Knowledge Base</h4>
+              <ul class="list-unstyled mb-0">
+                <li><a class="link-items smooth_cubic_trans" href="#">Home Maintenance</a></li>
+                <li><a class="link-items smooth_cubic_trans" href="#">Featured Article</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright pt-5">
+          <p class="content mb-0">Copyright @ 2020 Gizsafe</p>
+          <div class="external-links">
+            <a class="contact-link smooth_cubic_trans" href="mailto:contact@gizsafe.com">contact@gizsafe.com</a>
+            <a class="social-link smooth_cubic_trans" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="social-link smooth_cubic_trans" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a class="social-link smooth_cubic_trans" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Membership Plan Modal -->
+    <div class="modal fade" id="planModal" tabindex="-1" aria-labelledby="planModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="btn-close smooth_cubic_trans" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="relevant-video d-flex">
+              <iframe src="https://www.youtube.com/embed/dFgzHOX84xQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll To Top of the page button -->
+    <button id="scrollUp" class="slow_ease_trans fade" title="Click to Scroll Top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+      </svg>
+    </button>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/custom.particles.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
