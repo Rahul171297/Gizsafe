@@ -597,9 +597,9 @@ canvas.particles-js-canvas-el {
     align-items: flex-end;
     justify-content: center;
 }
-.modal .modal-body {
+/* .modal .modal-body {
     --bs-modal-padding: 0.25rem;
-}
+} */
 .modal .btn-close {
     opacity: 1;
     z-index: 99;
@@ -617,6 +617,14 @@ canvas.particles-js-canvas-el {
     width: 100%;
     aspect-ratio: 16/9;
     border-radius: 0.25rem;
+}
+.plan-message {
+    gap: 2rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Download App Section Styling */
