@@ -1064,31 +1064,35 @@ canvas.particles-js-canvas-el {
     align-items: center;
     transform-origin: left;
     inset: 0 auto auto 3rem;
-    transform: rotateZ(15deg);
     background-color: var(--bs-light);
 }
 .step-connector:nth-child(even) {
     inset: 0 auto auto 0;
     transform-origin: right;
-    transform: rotateZ(-26.5deg);
 }
 .step-connector.path_1 {
-    top: 8.5rem;
+    top: 7.5rem;
+    transform: rotateZ(21deg);
 }
 .step-connector.path_2 {
-    top: 17rem;
+    top: 18rem;
+    transform: rotateZ(-30deg);
 }
 .step-connector.path_3 {
-    top: 32rem;
+    top: 34rem;
+    transform: rotateZ(24deg);
 }
 .step-connector.path_4 {
-    top: 40.5rem;
+    top: 46.5rem;
+    transform: rotateZ(-34deg);
 }
 .step-connector.path_5 {
-    top: 55.5rem;
+    top: 65rem;
+    transform: rotateZ(23deg);
 }
 .step-connector.path_6 {
-    top: 64.5rem;
+    top: 77rem;
+    transform: rotateZ(-33deg);
 }
 .step-connector .animated-path {
     content: '';

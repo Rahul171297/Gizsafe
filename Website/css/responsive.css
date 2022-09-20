@@ -241,31 +241,35 @@
     gap: 10rem;
   }
   .step-connector {
-    width: 70%;
     height: 1rem;
     inset: 0 auto auto 5rem;
-    transform: rotateZ(11deg);
   }
   .step-connector:nth-child(even) {
     inset: 0 auto auto 2rem;
   }
   .step-connector.path_1 {
-    top: 10rem;
+  top: 10rem;
+  transform: rotateZ(12deg);
   }
   .step-connector.path_2 {
-    top: 20rem;
+    top: 19.25rem;
+    transform: rotateZ(-27.5deg);
   }
   .step-connector.path_3 {
-    top: 41rem;
+    top: 42rem;
+    transform: rotateZ(14deg);
   }
   .step-connector.path_4 {
-    top: 51rem;
+    top: 52rem;
+    transform: rotateZ(-30deg);
   }
   .step-connector.path_5 {
-    top: 71.5rem;
+    top: 77rem;
+    transform: rotateZ(13deg);
   }
   .step-connector.path_6 {
-    top: 81.5rem;
+    top: 87rem;
+    transform: rotateZ(-29deg);
   }
   .solution-steps {
     flex-basis: 35%;
@@ -312,27 +316,35 @@
   .step-connector {
     transform: rotateZ(10deg);
   }
+  .step-connector {
+    inset: 0 auto auto 3rem;
+  }
   .step-connector:nth-child(even) {
-    inset: 0 auto auto 4rem;
-    transform: rotateZ(-23.5deg);
+    inset: 0 auto auto 3rem;
   }
   .step-connector.path_1 {
-    top: 11.5rem;
+    top: 11rem;
+    transform: rotateZ(11deg);
   }
   .step-connector.path_2 {
     top: 22rem;
+    transform: rotateZ(-24deg);
   }
   .step-connector.path_3 {
-    top: 44.5rem;
+    top: 45rem;
+    transform: rotateZ(12deg);
   }
   .step-connector.path_4 {
-    top: 55.5rem;
+    top: 57rem;
+    transform: rotateZ(-25deg);
   }
   .step-connector.path_5 {
-    top: 77.5rem;
+    top: 81.5rem;
+    transform: rotateZ(12deg);
   }
   .step-connector.path_6 {
-    top: 88.5rem;
+    top: 92rem;
+    transform: rotateZ(-26deg);
   }
 }
 
@@ -351,27 +363,30 @@
     --bs-modal-width: 1000px;
   }
   .step-connector {
-    transform: rotateZ(9deg);
-  }
-  .step-connector:nth-child(even) {
-    transform: rotateZ(-20.5deg);
+    inset: 0 auto auto 6rem;
   }
   .step-connector.path_1 {
     top: 13rem;
+    transform: rotateZ(9deg);
   }
   .step-connector.path_2 {
-    top: 25.5rem;
+    top: 24rem;
+    transform: rotateZ(-21deg);
   }
   .step-connector.path_3 {
     top: 48rem;
+    transform: rotateZ(11deg);
   }
   .step-connector.path_4 {
     top: 61rem;
+    transform: rotateZ(-22.5deg);
   }
   .step-connector.path_5 {
-    top: 83.5rem;
+    top: 86.5rem;
+    transform: rotateZ(10deg);
   }
   .step-connector.path_6 {
-    top: 96rem;
+    top: 99rem;
+    transform: rotateZ(-21.5deg);
   }
 }
