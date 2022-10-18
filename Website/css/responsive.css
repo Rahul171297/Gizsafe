@@ -34,10 +34,6 @@
   .count-detail {
     flex-basis: calc(50% - 1rem);
   }
-  .copyright .external-links {
-    gap: 1.5rem;
-    flex-wrap: nowrap;
-  }
   .external-links a {
     font-size: var(--bs-body-font-size);
   }
@@ -117,7 +113,7 @@
     width: 2rem;
     height: 2rem;
     inset: -1rem -1rem auto auto;
-}
+  }
   .download-app {
     scroll-margin: 7.5rem;
   }
@@ -135,10 +131,6 @@
   .icon-block {
     min-height: 15rem;
     align-items: center;
-  }
-  .copyright {
-    flex-direction: row;
-    justify-content: space-between;
   }
   .payment-options .form-check {
     flex-basis: 33.33%;
@@ -167,6 +159,10 @@
   }
   .plan-message img {
     width: 50%;
+  }
+  footer h4.heading {
+    margin-bottom: 2.5rem;
+    font-size: calc(1.275rem + .3vw);
   }
 }
 
@@ -212,9 +208,6 @@
   }
   .count-detail {
     flex-basis: calc(25% - 0.75rem);
-  }
-  .footer-about .download-app-btns {
-    column-gap: 1rem;
   }
   .footer-logo {
     margin: 0;

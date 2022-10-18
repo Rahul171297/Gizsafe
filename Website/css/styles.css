@@ -641,7 +641,7 @@ canvas.particles-js-canvas-el {
     scroll-margin: 5rem;
 }
 .download-app-btn:hover img, .download-app-btn:focus img {
-    transform: scale(0.98);
+    transform: scale(0.95);
 }
 
 /* Testimonials and Faqs Section Styling */
@@ -784,12 +784,28 @@ canvas.particles-js-canvas-el {
     align-items: center;
     justify-content: center;
 }
-.footer-about .download-app-btn img {
+.download-app-btns .download-app-btn img {
+    width: 12.5rem;
     border-radius: var(--bs-border-radius-lg);
     border: var(--bs-border-width) var(--bs-border-style) var(--bs-light);
 }
-.site-links .link-head {
+.download-app-btns .btn-group {
+    gap: 1rem;
+    width: 100%;
+    border-radius: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+footer h4.heading {
     margin-bottom: 1.5rem;
+    font-size: calc(1.5rem + .5vw);
+}
+.contact-links {
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .site-links .link-items {
     opacity: 0.75;
@@ -799,7 +815,7 @@ canvas.particles-js-canvas-el {
     color: var(--bs-white);
     font-weight: var(--fw-medium);
 }
-.site-links .link-items::before, .copyright .contact-link::before {
+.site-links .link-items::before {
     width: 0%;
     height: 1px;
     content: '';
@@ -816,7 +832,6 @@ canvas.particles-js-canvas-el {
 .site-links .link-items:hover, .site-links .link-items:focus {
     opacity: 1;
 }
-.copyright .contact-link:hover::before, .copyright .contact-link:focus::before,
 .site-links .link-items:hover::before, .site-links .link-items:focus::before {
     width: min(100%, 100px);
 }
@@ -826,38 +841,30 @@ canvas.particles-js-canvas-el {
     align-items: center;
     justify-content: center;
     flex-direction: column-reverse;
+    border-top: 1px solid rgba(var(--bs-white-rgb), 0.1);
 }
-.copyright .external-links {
-    gap: 1rem;
+.external-links {
+    gap: 2rem;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 2rem;
     align-items: center;
     justify-content: center;
-}
-.external-links a {
-    font-size: 0.85rem;
-    padding: 0.5rem 0;
-    position: relative;
-    color: var(--bs-white);
-}
-.external-links .contact-link {
-    flex: 1 0 100%;
-    text-align: center;
-}
-.copyright .contact-link::before {
-    inset: auto auto 0;
 }
 .external-links .social-link {
     display: flex;
-    height: 2.5rem;
-    aspect-ratio: 1;
+    width: 2.75rem;
+    height: 2.75rem;
+    font-size: 1.25rem;
     align-items: center;
+    color: var(--bs-white);
+    border-radius: 0.75rem;
     justify-content: center;
-    border-radius: var(--bs-border-radius-pill);
-    border: var(--bs-border-width) var(--bs-border-style) transparent;
+    border: var(--bs-border-width) var(--bs-border-style) rgba(var(--bs-white-rgb), 0.25);
 }
 .external-links .social-link:hover, .external-links .social-link:focus {
-    border-color: var(--bs-white);
+    font-size: 1.5rem;
+    border-color: var(--bs-white-rgb);
 }
 
 /* -------------------------------------------------- Inner Page Styling -------------------------------------------------- */
