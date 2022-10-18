@@ -104,27 +104,27 @@
 
 /* Scroll To Top Button Hover Animation */
 @-webkit-keyframes float-icon {
-  0% { transform: translateY(10%); }
-  50% { transform: translateY(-10%); }
-  100% { transform: translateY(10%); }
+  0% { transform: translateY(5%); }
+  50% { transform: translateY(-5%); }
+  100% { transform: translateY(5%); }
 }
 @-moz-keyframes float-icon {
-  0% { transform: translateY(10%); }
-  50% { transform: translateY(-10%); }
-  100% { transform: translateY(10%); }
+  0% { transform: translateY(5%); }
+  50% { transform: translateY(-5%); }
+  100% { transform: translateY(5%); }
 }
 @-ms-keyframes float-icon {
-  0% { transform: translateY(10%); }
-  50% { transform: translateY(-10%); }
-  100% { transform: translateY(10%); }
+  0% { transform: translateY(5%); }
+  50% { transform: translateY(-5%); }
+  100% { transform: translateY(5%); }
 }
 @-o-keyframes float-icon {
-  0% { transform: translateY(10%); }
-  50% { transform: translateY(-10%); }
-  100% { transform: translateY(10%); }
+  0% { transform: translateY(5%); }
+  50% { transform: translateY(-5%); }
+  100% { transform: translateY(5%); }
 }
 @keyframes float-icon {
-  0% { transform: translateY(10%); }
-  50% { transform: translateY(-10%); }
-  100% { transform: translateY(10%); }
+  0% { transform: translateY(5%); }
+  50% { transform: translateY(-5%); }
+  100% { transform: translateY(5%); }
 }

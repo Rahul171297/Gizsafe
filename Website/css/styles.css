@@ -139,6 +139,7 @@ a {
 #scrollUp:hover {
     color: var(--bs-white);
     background-color: var(--bs-tertiary);
+    box-shadow: 0 0.25rem 1rem 0 rgba(var(--bs-tertiary-rgb), 0.25);
     -webkit-animation: 1000ms ease-in-out infinite float-icon;
     -moz-animation: 1000ms ease-in-out infinite float-icon;
     -ms-animation: 1000ms ease-in-out infinite float-icon;
@@ -170,10 +171,18 @@ a {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
     margin: 0;
 }
 input[type=number] {
+    -webkit-appearance: textfield;
     -moz-appearance: textfield;
+    -ms-appearance: textfield;
+    -o-appearance: textfield;
+    appearance: textfield;
 }
 
 /* Transition Effects */
@@ -584,7 +593,7 @@ canvas.particles-js-canvas-el {
     background-color: var(--bs-light);
 }
 .video.bg-image {
-    background: center no-repeat url("../images/index/video_bg.jpg");
+    background: center no-repeat url("../images/video_bg.webp");
     background-size: cover;
 }
 .video .main-title {
@@ -870,7 +879,16 @@ canvas.particles-js-canvas-el {
 
 /* How it works page */
 .how-banner {
-    background: url("../images/how-it-works/banner-bg.jpg");
+    background: url("../images/howitworks-banner.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* FAQs page */
+.faq-banner {
+    background: url("../images/faq-banner.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -879,7 +897,7 @@ canvas.particles-js-canvas-el {
 
 /* Contact Us page */
 .contact-banner {
-    background: url("../images/contact-us/banner-bg.jpg");
+    background: url("../images/contact-banner.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -892,7 +910,7 @@ canvas.particles-js-canvas-el {
 
 /* Pricing page */
 .pricing-banner {
-    background: url("../images/pricing/banner-bg.jpg");
+    background: url("../images/pricing-banner.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
